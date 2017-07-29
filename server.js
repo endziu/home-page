@@ -14,7 +14,9 @@ app
   .then(() => {
     const server = express();
 
-    server.get(['/api', '/api/:id'], cors(), (req, res) => {
+    server.use(cors());
+
+    server.get(['/api', '/api/:id'], (req, res) => {
       const titlesMatch = track => track.permalink === req.params.id;
       req.params.id
         ? res.send(takeFirst(tracks.filter(titlesMatch)))
