@@ -14,20 +14,24 @@ const wave_forms = [
 
 const Waves = props => (
   <Layout>
-    <div className="bg-washed-yellow">
-      <ul className="list">
-        {wave_forms.map((url, i) => (
-          <li className="pa2 bl bw4 b--green">
-            <img
-              src={url}
-              alt={`wave${i}`}
-              key={i}
-              className={i === 0 ? 'bb bt b-black' : 'bb b--black'}
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="list mv0 pl0">
+      {wave_forms.map((url, i) => (
+        <li className="h3 w-100 mw7 mb2 bl bw3 b--yellow">
+          <img
+            src={url}
+            alt={`wave${i}`}
+            key={i}
+            className="h3 bg-light-yellow"
+          />
+          <div className="relative bottom-4 h3 w-75 bg-black-50 br bw1 b--red" />
+        </li>
+      ))}
+    </ul>
+    <style jsx>{`
+      .bottom-4 {
+        bottom: 4.21rem;
+      }
+    `}</style>
   </Layout>
 );
 
