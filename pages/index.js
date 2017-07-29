@@ -14,7 +14,7 @@ const Index = ({ tracks }) => (
             as={`/s/${track.permalink}`}
             href={`/sound?id=${track.permalink}`}
           >
-            <a className="link no-underline black-80 hover-red">
+            <a className="link no-underline black-80 white hover-red ">
               {track.title}
             </a>
           </Link>

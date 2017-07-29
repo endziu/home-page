@@ -7,11 +7,14 @@ const client_id = 'client_id=33c73dacce84dddddbc15117e071b6ce';
 const Sound = props => (
   <Layout>
     <h4 className="underline-hover pointer">
-      <a href={`${process.env.BACKEND_URL}/api/${props.track.permalink}`}>
+      <a
+        href={`${process.env.BACKEND_URL}/api/${props.track.permalink}`}
+        className="link white no-underline pl2"
+      >
         {props.track.permalink}
       </a>
     </h4>
-    <div className="w-100 mw8 h3">
+    <div className="w-100 mw8 pa2">
       <div
         className="h3 bg-orange"
         style={{
@@ -23,12 +26,12 @@ const Sound = props => (
         src={props.track.waveform_url}
         alt="wave"
       />
+      <audio
+        src={`${props.track.stream_url}?${client_id}`}
+        controls
+        className="w-100"
+      />
     </div>
-    <audio
-      src={`${props.track.stream_url}?${client_id}`}
-      className="w-100 mw8"
-      controls
-    />
     <style jsx>{`
       .bottom-4 {
         bottom: 4rem;

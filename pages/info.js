@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch';
 
 const Info = props => (
   <Layout>
-    <pre>
+    <pre className="pl2 white">
       there are: {props.data.length} tracks
     </pre>
   </Layout>
