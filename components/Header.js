@@ -9,9 +9,6 @@ export default () => (
       <Link href="/info">
         <a className={'white no-underline mr2 hover-yellow'}>info</a>
       </Link>
-      <Link href="/waves">
-        <a className={'white no-underline mr2 hover-green'}>waves</a>
-      </Link>
     </nav>
   </header>
 );

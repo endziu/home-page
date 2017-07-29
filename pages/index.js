@@ -4,20 +4,25 @@ import fetch from 'isomorphic-unfetch';
 
 const Index = ({ tracks }) => (
   <Layout>
-    <ul className="list pl0 ml0 mw6 bl bw1 b--green">
+    <ul className="list vh-100 pa0 ma0 mw7 overflow-auto">
       {tracks.map((track, i, arr) => (
         <li
           key={i}
-          className={`pa2 ${i === arr.length - 1 ? '' : 'bb b--light-silver'}`}
+          className={`pa3 ${i === arr.length - 1 ? 'pointer' : 'bb b--light-silver pointer'}`}
+          style={{
+            'background-image': `url("${track.waveform_url}")`,
+            'background-size': '100% 100%'
+          }}
         >
           <Link
             as={`/s/${track.permalink}`}
             href={`/sound?id=${track.permalink}`}
           >
-            <a className="link no-underline black-80 white hover-red ">
+            <span className="link underline-hover hover-red no-underline black-80 white truncate">
               {track.title}
-            </a>
+            </span>
           </Link>
+
         </li>
       ))}
     </ul>
