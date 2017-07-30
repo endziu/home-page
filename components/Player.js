@@ -93,6 +93,7 @@ class Player extends React.Component {
       <div className="white">
         {this.props.src}
         <audio
+          id="audio"
           ref="audio"
           preload={this.props.preload}
           controls={false}

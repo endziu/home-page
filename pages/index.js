@@ -18,14 +18,26 @@ class Index extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentTrack: 0
+      currentTrack: 0,
+      isPlaying: false
     };
     this.itemClick = this.itemClick.bind(this);
+    this.playClick = this.playClick.bind(this);
   }
 
   itemClick(e) {
     this.setState({
-      currentTrack: e
+      currentTrack: e,
+      isPlaying: false
+    });
+  }
+
+  playClick(e) {
+    this.state.isPlaying
+      ? this.refs.player.audio.pause()
+      : this.refs.player.audio.play();
+    this.setState({
+      isPlaying: !this.state.isPlaying
     });
   }
 
@@ -35,16 +47,20 @@ class Index extends React.Component {
     return (
       <Layout>
         <Player
+          ref="player"
           source={
             track.stream_url + '?client_id=33c73dacce84dddddbc15117e071b6ce'
           }
           preload={'metadata'}
+          isPlaying={this.state.isPlaying}
         />
         <Display waveform_url={track.waveform_url} />
         <SoundList
           titles={titles}
           itemClick={this.itemClick}
+          playClick={this.playClick}
           current={this.state.currentTrack}
+          isPlaying={this.state.isPlaying}
         />
       </Layout>
     );

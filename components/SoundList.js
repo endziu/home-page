@@ -1,16 +1,16 @@
-const SoundList = ({ titles, itemClick, current }) => (
+const SoundList = ({ titles, itemClick, playClick, current, isPlaying }) => (
   <ul className="list ma2 pa0 white">
     {titles.map((title, i, arr) => (
-      <li
-        key={i}
-        onClick={itemClick.bind(null, i)}
-        className={
-          i === current
-            ? 'underline-hover red pointer'
-            : 'underline-hover hover-green pointer'
-        }
-      >
-        {title}
+      <li key={i} className={i === current ? 'red' : ''}>
+        <span
+          onClick={itemClick.bind(null, i)}
+          className="underline-hover hover-green pointer"
+        >
+          {title}
+        </span>
+        <span onClick={playClick} className="pointer">
+          {i === current ? !isPlaying ? '▶️' : '⏸' : ''}
+        </span>
       </li>
     ))}
   </ul>
