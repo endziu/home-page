@@ -1,45 +1,54 @@
-import Layout from '../components/Layout.js';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 
-const Index = ({ tracks }) => (
-  <Layout>
-    <ul className="list list-h pa1 mt0 mw7 overflow-y-auto">
-      {tracks.map((track, i, arr) => (
-        <li
-          key={i}
-          className={`pa3 ${i === arr.length - 1 ? 'pointer mb2' : 'bb b--light-silver pointer mb2 truncate'}`}
-          style={{
-            'background-image': `url("${track.waveform_url}")`,
-            'background-size': '100% 100%'
-          }}
-        >
-          <Link
-            as={`/s/${track.permalink}`}
-            href={`/sound?id=${track.permalink}`}
-          >
-            <span className="link underline-hover hover-green no-underline bg-black-20 white truncate">
-              {track.title}
-            </span>
-          </Link>
+import Layout from '../components/Layout.js';
+import Player from '../components/Player.js';
+import Display from '../components/Display.js';
+import SoundList from '../components/SoundList.js';
 
-        </li>
-      ))}
-      <style jsx>{`
-        .list-h {
-          height: calc(100vh - 52px)
-        }
-      `}</style>
-    </ul>
-  </Layout>
-);
+class Index extends React.Component {
+  static async getInitialProps() {
+    const res = await fetch(`${process.env.BACKEND_URL}/api`);
+    const data = await res.json();
+    return {
+      tracks: data
+    };
+  }
 
-Index.getInitialProps = async function() {
-  const res = await fetch(`${process.env.BACKEND_URL}/api`);
-  const data = await res.json();
-  return {
-    tracks: data
-  };
-};
+  constructor() {
+    super();
+    this.state = {
+      currentTrack: 0
+    };
+    this.itemClick = this.itemClick.bind(this);
+  }
+
+  itemClick(e) {
+    this.setState({
+      currentTrack: e
+    });
+  }
+
+  render() {
+    const track = this.props.tracks[this.state.currentTrack];
+    const titles = this.props.tracks.map(t => t.permalink);
+    return (
+      <Layout>
+        <Player
+          source={
+            track.stream_url + '?client_id=33c73dacce84dddddbc15117e071b6ce'
+          }
+          preload={'metadata'}
+        />
+        <Display waveform_url={track.waveform_url} />
+        <SoundList
+          titles={titles}
+          itemClick={this.itemClick}
+          current={this.state.currentTrack}
+        />
+      </Layout>
+    );
+  }
+}
 
 export default Index;
