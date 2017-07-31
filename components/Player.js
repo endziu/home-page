@@ -90,19 +90,16 @@ class Player extends React.Component {
 
   render() {
     return (
-      <div className="white">
-        {this.props.src}
-        <audio
-          id="audio"
-          ref="audio"
-          preload={this.props.preload}
-          controls={false}
-          crossOrigin="anonymous"
-          autoPlay={this.props.autoplay}
-          loop={this.props.loop}
-          src={this.props.source}
-        />
-      </div>
+      <audio
+        id="audio"
+        ref="audio"
+        preload={this.props.preload}
+        controls={false}
+        crossOrigin="anonymous"
+        autoPlay={this.props.autoplay}
+        loop={this.props.loop}
+        src={this.props.source}
+      />
     );
   }
 }
