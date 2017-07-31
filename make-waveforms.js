@@ -1,6 +1,22 @@
-var Waveform = require('node-waveform');
+var Waveform = require('node-wave');
 var fs = require('fs');
 
-Waveform('./public/sounds/efix.mp3', options, function(err, buffer) {
-  fs.writeFileSync('out.png', buffer);
-});
+const files = fs.readdirSync('./public/sounds')
+
+const options = 
+  { width: 768
+  , height: 64
+  , baseline: 32
+  , padding:2
+  , waveColor: 'white',backgroundColor: 'rgba(0,0,0,0)'
+  }
+
+files.forEach((file, i, arr) => {
+  Waveform(
+    `./public/sounds/${file}`,
+    options,
+    (err, buffer) => fs.writeFileSync(`./public/waves/${file.replace('.mp3', '.png')}`, buffer)
+  )
+})
+
+console.log('done!')

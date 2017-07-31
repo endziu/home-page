@@ -71,10 +71,7 @@ class Index extends React.Component {
           onTimeupdate={this.updatePos}
         />
         <Display
-          waveform_url={
-            'https://res.cloudinary.com/endziu/video/upload/h_64,w_768,fl_waveform,co_white,b_none/' +
-              track.secure_url.substr(59).replace('.mp3', '.png')
-          }
+          waveform_url={`/waves/${titles[this.state.currentTrack]}.png`}
           playPos={this.state.percentPlayed}
           onClick={this.waveClick}
         />
