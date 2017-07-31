@@ -19,10 +19,12 @@ class Index extends React.Component {
     super();
     this.state = {
       currentTrack: 0,
-      isPlaying: false
+      isPlaying: false,
+      percentPlayed: 0
     };
     this.itemClick = this.itemClick.bind(this);
     this.playClick = this.playClick.bind(this);
+    this.updatePos = this.updatePos.bind(this);
   }
 
   itemClick(e) {
@@ -33,11 +35,18 @@ class Index extends React.Component {
   }
 
   playClick(e) {
-    this.state.isPlaying
-      ? this.refs.player.audio.pause()
-      : this.refs.player.audio.play();
+    this.refs.player.setPlaybackPercent(0);
+    this.refs.player.togglePlay();
     this.setState({
       isPlaying: !this.state.isPlaying
+    });
+  }
+
+  updatePos(e) {
+    const duration = this.refs.player.audio.duration || 0;
+    const currentTime = this.refs.player.audio.currentTime || 0;
+    this.setState({
+      percentPlayed: (currentTime / duration).toFixed(3) * 100 || 0
     });
   }
 
@@ -53,8 +62,12 @@ class Index extends React.Component {
           }
           preload={'metadata'}
           isPlaying={this.state.isPlaying}
+          onTimeupdate={this.updatePos}
         />
-        <Display waveform_url={track.waveform_url} />
+        <Display
+          waveform_url={track.waveform_url}
+          playPos={this.state.percentPlayed}
+        />
         <SoundList
           titles={titles}
           itemClick={this.itemClick}
