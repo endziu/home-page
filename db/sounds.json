@@ -1,26 +1,42 @@
 [
   {
-    "url": "/sounds/untuned-garden.mp3"
+    "sound_url": "/sounds/untuned-garden.mp3",
+    "wave_url": "/waves/untuned-garden.png",
+    "title": "untuned garden"
   },
   {
-    "url": "/sounds/prep2.mp3"
+    "sound_url": "/sounds/prep2.mp3",
+    "wave_url": "/waves/prep2.png",
+    "title": "prep2"
   },
   {
-    "url": "/sounds/micro-situations.mp3"
+    "sound_url": "/sounds/micro-situations.mp3",
+    "wave_url": "/waves/micro-situations.png",
+    "title": "micro situations"
   },
   {
-    "url": "/sounds/lengths.mp3"
+    "sound_url": "/sounds/lengths.mp3",
+    "wave_url": "/waves/lengths.png",
+    "title": "lengths"
   },
   {
-    "url": "/sounds/kliks-radio.mp3"
+    "sound_url": "/sounds/kliks-radio.mp3",
+    "wave_url": "/waves/kliks-radio.png",
+    "title": "kliks radio"
   },
   {
-    "url": "/sounds/efix.mp3"
+    "sound_url": "/sounds/efix.mp3",
+    "wave_url": "/waves/efix.png",
+    "title": "efix"
   },
   {
-    "url": "/sounds/binary-blob.mp3"
+    "sound_url": "/sounds/binary-blob.mp3",
+    "wave_url": "/waves/binary-blob.png",
+    "title": "binary blob"
   },
   {
-    "url": "/sounds/110untunednobassmix.mp3"
+    "sound_url": "/sounds/110untunednobassmix.mp3",
+    "wave_url": "/waves/110untunednobassmix.png",
+    "title": "110untunednobassmix"
   }
 ]
