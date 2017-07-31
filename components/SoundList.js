@@ -1,5 +1,5 @@
 const SoundList = ({ titles, itemClick, playClick, current, isPlaying }) => (
-  <ul className="list ma2 pa0 white">
+  <ul className="list ma2 pa0 white mw8 center">
     {titles.map((title, i, arr) => (
       <li key={i} className={i === current ? 'green' : ''}>
         <span

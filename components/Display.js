@@ -1,7 +1,7 @@
 const Display = ({ waveform_url, playPos = 0, onClick }) => (
   <div
     id="wave"
-    className="ma2 h3 mw7 relative"
+    className="ma2 h3 mw7 relative center"
     onClick={onClick}
     style={{
       backgroundImage: `url("${waveform_url}")`,

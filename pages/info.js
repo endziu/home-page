@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch';
 
 const Info = props => (
   <Layout>
-    <pre className="pl2 white">
+    <pre className="pl2 white mw7 center">
       testing testing 1 2 3...
     </pre>
   </Layout>
