@@ -7,8 +7,11 @@ const Display = ({ waveform_url, playPos = 40 }) => (
     }}
   >
     <div
-      className="h3 absolute bg-black"
-      style={{ width: '3px', left: `${playPos}%` }}
+      className="h3 absolute bg-white-40"
+      style={{
+        width: `${playPos}%`,
+        transition: 'all 0.25s ease-in'
+      }}
     />
   </div>
 );
