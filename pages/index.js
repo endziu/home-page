@@ -28,9 +28,9 @@ class Index extends React.Component {
     this.updatePos = this.updatePos.bind(this);
   }
 
-  itemClick(e) {
+  itemClick(i) {
     this.setState({
-      currentTrack: e,
+      currentTrack: i,
       isPlaying: false
     });
   }
