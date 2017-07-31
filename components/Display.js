@@ -1,5 +1,6 @@
 const Display = ({ waveform_url, playPos = 0, onClick }) => (
   <div
+    id="wave"
     className="ma2 h3 mw7 relative"
     onClick={onClick}
     style={{
@@ -11,7 +12,7 @@ const Display = ({ waveform_url, playPos = 0, onClick }) => (
       className="h3 absolute bg-black-40"
       style={{
         width: `${playPos}%`,
-        transition: 'all 0.125s ease-in'
+        transition: 'all 0.1s ease-in-out'
       }}
     />
     <div
@@ -19,7 +20,7 @@ const Display = ({ waveform_url, playPos = 0, onClick }) => (
       style={{
         width: '2px',
         left: `${playPos}%`,
-        transition: 'all 0.125s ease-in'
+        transition: 'all 0.1s ease-in-out'
       }}
     />
   </div>

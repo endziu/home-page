@@ -44,7 +44,7 @@ class Index extends React.Component {
   }
 
   waveClick(e) {
-    const ratio = e.clientX / 768;
+    const ratio = e.clientX / document.getElementById('wave').clientWidth;
     this.refs.player.setPlaybackPercent(ratio);
   }
 
