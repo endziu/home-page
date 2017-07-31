@@ -24,6 +24,7 @@ class Index extends React.Component {
     };
     this.itemClick = this.itemClick.bind(this);
     this.playClick = this.playClick.bind(this);
+    this.waveClick = this.waveClick.bind(this);
     this.updatePos = this.updatePos.bind(this);
   }
 
@@ -42,6 +43,11 @@ class Index extends React.Component {
     });
   }
 
+  waveClick(e) {
+    const ratio = e.clientX / 768;
+    this.refs.player.setPlaybackPercent(ratio);
+  }
+
   updatePos(e) {
     const duration = this.refs.player.audio.duration || 0;
     const currentTime = this.refs.player.audio.currentTime || 0;
@@ -52,21 +58,25 @@ class Index extends React.Component {
 
   render() {
     const track = this.props.tracks[this.state.currentTrack];
-    const titles = this.props.tracks.map(t => t.title.toLowerCase());
+    const titles = this.props.tracks.map(t =>
+      t.public_id.substr(7).toLowerCase()
+    );
     return (
       <Layout>
         <Player
           ref="player"
-          source={
-            track.stream_url + '?client_id=33c73dacce84dddddbc15117e071b6ce'
-          }
+          source={track.secure_url}
           preload={'metadata'}
           isPlaying={this.state.isPlaying}
           onTimeupdate={this.updatePos}
         />
         <Display
-          waveform_url={track.waveform_url}
+          waveform_url={
+            'https://res.cloudinary.com/endziu/video/upload/h_64,w_768,fl_waveform,co_white,b_none/' +
+              track.secure_url.substr(59).replace('.mp3', '.png')
+          }
           playPos={this.state.percentPlayed}
+          onClick={this.waveClick}
         />
         <SoundList
           titles={titles}

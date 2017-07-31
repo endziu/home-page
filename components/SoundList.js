@@ -4,11 +4,11 @@ const SoundList = ({ titles, itemClick, playClick, current, isPlaying }) => (
       <li key={i} className={i === current ? 'red' : ''}>
         <span
           onClick={itemClick.bind(null, i)}
-          className="underline-hover hover-green pointer f3"
+          className="underline-hover hover-green pointer f4"
         >
           {title}
         </span>
-        <span onClick={playClick} className="pointer f3">
+        <span onClick={playClick} className="pointer f4">
           {i === current ? !isPlaying ? '▶️' : '⏸' : ''}
         </span>
       </li>

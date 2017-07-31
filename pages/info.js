@@ -4,12 +4,7 @@ import fetch from 'isomorphic-unfetch';
 const Info = props => (
   <Layout>
     <pre className="pl2 white">
-      <a
-        href="https://endziu.xyz"
-        className="link no-underline underline-hover white"
-      >
-        endziu.xyz
-      </a>
+      testing testing 1 2 3...
     </pre>
   </Layout>
 );
