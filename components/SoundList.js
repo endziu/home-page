@@ -8,8 +8,8 @@ const SoundList = ({ titles, itemClick, playClick, current, isPlaying }) => (
         >
           {title}
         </span>
-        <span onClick={playClick} className="pointer f4">
-          {i === current ? !isPlaying ? ' ▶' : ' ⏸' : ''}
+        <span onClick={playClick} className="pointer f4 white">
+          {i === current ? !isPlaying ? ' ▶️' : ' ⏸' : ''}
         </span>
       </li>
     ))}

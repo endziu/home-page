@@ -58,25 +58,25 @@ class Index extends React.Component {
 
   render() {
     const track = this.props.tracks[this.state.currentTrack];
-    const titles = this.props.tracks.map(t =>
-      t.public_id.substr(7).toLowerCase()
+    const urls = this.props.tracks.map(track =>
+      track.url.substr(8).replace('.mp3', '')
     );
     return (
       <Layout>
         <Player
           ref="player"
-          source={track.secure_url}
+          source={`/sounds/${urls[this.state.currentTrack]}.mp3`}
           preload={'metadata'}
           isPlaying={this.state.isPlaying}
           onTimeupdate={this.updatePos}
         />
         <Display
-          waveform_url={`/waves/${titles[this.state.currentTrack]}.png`}
+          waveform_url={`/waves/${urls[this.state.currentTrack]}.png`}
           playPos={this.state.percentPlayed}
           onClick={this.waveClick}
         />
         <SoundList
-          titles={titles}
+          titles={urls}
           itemClick={this.itemClick}
           playClick={this.playClick}
           current={this.state.currentTrack}
