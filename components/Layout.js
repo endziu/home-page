@@ -17,7 +17,6 @@ export default ({
         href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"
       />
     </Head>
-
     <Header />
 
     {children}

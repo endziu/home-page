@@ -52,7 +52,7 @@ class Index extends React.Component {
 
   render() {
     const track = this.props.tracks[this.state.currentTrack];
-    const titles = this.props.tracks.map(t => t.permalink);
+    const titles = this.props.tracks.map(t => t.title.toLowerCase());
     return (
       <Layout>
         <Player
