@@ -9,16 +9,8 @@ export default () => (
       <Link href="/music">
         <a className={'white f4 no-underline mr3 hover-green'}>music</a>
       </Link>
-      <Link href="/code">
-        <a className={'white f4 no-underline mr3 hover-yellow'}>code</a>
-      </Link>
-      <Link>
-        <a
-          className={'white f4 no-underline mr3 hover-orange'}
-          href="https://dzwiekowamapa.pl"
-        >
-          soundMap
-        </a>
+      <Link href="/dev">
+        <a className={'white f4 no-underline mr3 hover-yellow'}>web</a>
       </Link>
     </nav>
   </header>
