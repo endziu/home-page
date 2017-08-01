@@ -7,7 +7,6 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const tracks = require('./db/sounds.json');
-const takeFirst = arr => arr[0];
 
 app
   .prepare()
