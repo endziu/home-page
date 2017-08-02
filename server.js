@@ -19,9 +19,9 @@ app
       res.send(tracks);
     });
 
-    server.get('/s/:id', (req, res) => {
+    server.get('/m/:id', (req, res) => {
       const queryParams = { id: req.params.id };
-      app.render(req, res, '/sound', queryParams);
+      app.render(req, res, '/music', queryParams);
     });
 
     server.get('*', (req, res) => {

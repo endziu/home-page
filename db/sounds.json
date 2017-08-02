@@ -1,47 +1,42 @@
 [
   {
-    "sound_url": "/sounds/untuned-garden.mp3",
-    "wave_url": "/waves/untuned-garden.png",
-    "title": "untuned garden"
+    "title": "110untunednobassmix",
+    "waveform_url": "/waves/110untunednobassmix.png",
+    "sound_url": "/sounds/110untunednobassmix.mp3"
   },
   {
-    "sound_url": "/sounds/prep2.mp3",
-    "wave_url": "/waves/prep2.png",
-    "title": "prep2"
+    "title": "binary blob",
+    "waveform_url": "/waves/binary-blob.png",
+    "sound_url": "/sounds/binary-blob.mp3"
   },
   {
-    "sound_url": "/sounds/micro-situations.mp3",
-    "wave_url": "/waves/micro-situations.png",
-    "title": "micro situations"
+    "title": "efix",
+    "waveform_url": "/waves/efix.png",
+    "sound_url": "/sounds/efix.mp3"
   },
   {
-    "sound_url": "/sounds/lengths.mp3",
-    "wave_url": "/waves/lengths.png",
-    "title": "lengths"
+    "title": "kliks radio",
+    "waveform_url": "/waves/kliks-radio.png",
+    "sound_url": "/sounds/kliks-radio.mp3"
   },
   {
-    "sound_url": "/sounds/kliks-radio.mp3",
-    "wave_url": "/waves/kliks-radio.png",
-    "title": "kliks radio"
+    "title": "lengths",
+    "waveform_url": "/waves/lengths.png",
+    "sound_url": "/sounds/lengths.mp3"
   },
   {
-    "sound_url": "/sounds/efix.mp3",
-    "wave_url": "/waves/efix.png",
-    "title": "efix"
+    "title": "micro situations",
+    "waveform_url": "/waves/micro-situations.png",
+    "sound_url": "/sounds/micro-situations.mp3"
   },
   {
-    "sound_url": "/sounds/binary-blob.mp3",
-    "wave_url": "/waves/binary-blob.png",
-    "title": "binary blob"
+    "title": "prep2",
+    "waveform_url": "/waves/prep2.png",
+    "sound_url": "/sounds/prep2.mp3"
   },
   {
-    "sound_url": "/sounds/110untunednobassmix.mp3",
-    "wave_url": "/waves/110untunednobassmix.png",
-    "title": "110untunednobassmix"
-  },
-  {
-    "sound_url": "/sounds/comp.mp3",
-    "wave_url": "/waves/comp.png",
-    "title": "comp"
+    "title": "untuned garden",
+    "waveform_url": "/waves/untuned-garden.png",
+    "sound_url": "/sounds/untuned-garden.mp3"
   }
-] 
+]
