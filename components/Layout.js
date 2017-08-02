@@ -1,7 +1,7 @@
-import Head from 'next/head';
+import Head from 'next/head'
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from './Header'
+import Footer from './Footer'
 
 export default ({
   children,
@@ -24,4 +24,4 @@ export default ({
     <Footer />
 
   </div>
-);
+)

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
 export default () => (
   <header className="pv1 pl2 bg-navy mw8 center bb bw1 b--green">
@@ -14,4 +14,4 @@ export default () => (
       </Link>
     </nav>
   </header>
-);
+)

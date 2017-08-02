@@ -1,5 +1,5 @@
-import Layout from '../components/Layout.js';
-import fetch from 'isomorphic-unfetch';
+import Layout from '../components/Layout.js'
+import fetch from 'isomorphic-unfetch'
 
 const Index = props => (
   <Layout>
@@ -7,6 +7,6 @@ const Index = props => (
       coding coding  00 01 10...
     </pre>
   </Layout>
-);
+)
 
-export default Index;
+export default Index

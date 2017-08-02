@@ -1,12 +1,8 @@
-const {
-  printErrors,
-  readDirAsync,
-  writeFileAsync,
-  generateData
-} = require('./utils/helpers.js');
+const utils = require('./utils/helpers.js')
+const { printErrors, readDirAsync, writeFileAsync, generateData } = utils
 
 readDirAsync('./public/sounds')
   .then(generateData)
   .then(JSON.stringify)
   .then(writeFileAsync)
-  .catch(printErrors);
+  .catch(printErrors)

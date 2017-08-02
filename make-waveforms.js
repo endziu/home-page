@@ -1,7 +1,7 @@
 //var Waveform = require('node-wave');
-var fs = require('fs');
+var fs = require('fs')
 
-const files = fs.readdirSync('./public/sounds');
+const files = fs.readdirSync('./public/sounds')
 
 const options = {
   width: 1024,
@@ -10,9 +10,9 @@ const options = {
   padding: 2,
   waveColor: 'white',
   backgroundColor: 'rgba(0,0,0,0)'
-};
+}
 
-console.log(files);
+console.log(files)
 
 /*
 files.forEach((file, i, arr) => {

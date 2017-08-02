@@ -7,4 +7,4 @@ export default () => (
       ©
     </a>
   </footer>
-);
+)

@@ -24,6 +24,6 @@ const Display = ({ waveform_url, playPos = 0, onClick }) => (
       }}
     />
   </div>
-);
+)
 
-export default Display;
+export default Display

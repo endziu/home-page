@@ -1,4 +1,4 @@
-import Layout from '../components/Layout.js';
+import Layout from '../components/Layout.js'
 
 const Index = props => (
   <Layout>
@@ -6,6 +6,6 @@ const Index = props => (
       hello world ...
     </pre>
   </Layout>
-);
+)
 
-export default Index;
+export default Index

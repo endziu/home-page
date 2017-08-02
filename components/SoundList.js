@@ -14,6 +14,6 @@ const SoundList = ({ titles, itemClick, playClick, current, isPlaying }) => (
       </li>
     ))}
   </ul>
-);
+)
 
-export default SoundList;
+export default SoundList
