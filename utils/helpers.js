@@ -19,6 +19,7 @@ const options = {
   waveColor: 'white',
   backgroundColor: 'rgba(0,0,0,0)'
 }
+
 const drawWaveform = path =>
   new Promise((resolve, reject) =>
     Waveform(
@@ -35,14 +36,15 @@ const generateData = listOfFiles =>
     sound_url: `/sounds/${file}`
   }))
 
-const writeFileAsync = data =>
+const writeFileAsync = path => data =>
   new Promise((resolve, reject) =>
-    fs.writeFile('db/sounds.json', data, err => (err ? reject(err) : resolve()))
+    fs.writeFile(path, data, err => (err ? reject(err) : resolve(data)))
   )
 
 module.exports = {
   printErrors,
   readDirAsync,
   generateData,
-  writeFileAsync
+  writeFileAsync,
+  drawWaveform
 }

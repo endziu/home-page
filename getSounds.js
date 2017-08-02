@@ -4,5 +4,5 @@ const { printErrors, readDirAsync, writeFileAsync, generateData } = utils
 readDirAsync('./public/sounds')
   .then(generateData)
   .then(JSON.stringify)
-  .then(writeFileAsync)
+  .then(writeFileAsync('db/sounds.json'))
   .catch(printErrors)

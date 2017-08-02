@@ -1,5 +1,9 @@
-const { writeFileAsync, drawWaveform } = require('./utils/helpers.js')
-const files = fs.readdirSync('./public/sounds')
+const {
+  readDirAsync,
+  writeFileAsync,
+  drawWaveform
+} = require('./utils/helpers.js')
+const files = readDirAsync('./public/sounds')
 
 const options = {
   width: 1024,
@@ -12,4 +16,7 @@ const options = {
 
 console.log(files)
 
-files.map(drawWaveform).then(writeFileAync)
+readDirAsync('./public/sounds')
+  .then(files => files.map(x => `/public/waves/${x.replace('.mp3', '.png')}`))
+  .then(paths => paths.map(drawWaveform))
+  .then(console.log)
