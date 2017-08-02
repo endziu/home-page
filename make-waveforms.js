@@ -16,6 +16,5 @@ files.forEach((file, i, arr) => {
   Waveform(`./public/sounds/${file}`, options, (err, buffer) =>
     fs.writeFileSync(`./public/waves/${file.replace('.mp3', '.png')}`, buffer)
   );
+  console.log(`${i + 1} done! ${arr.length - i} to go`);
 });
-
-console.log('done!');
