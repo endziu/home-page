@@ -38,5 +38,10 @@
     "sound_url": "/sounds/110untunednobassmix.mp3",
     "wave_url": "/waves/110untunednobassmix.png",
     "title": "110untunednobassmix"
+  },
+  {
+    "sound_url": "/sounds/comp.mp3",
+    "wave_url": "/waves/comp.png",
+    "title": "comp"
   }
-]
+] 
