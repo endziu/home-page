@@ -1,6 +1,4 @@
-//var Waveform = require('node-wave');
-var fs = require('fs')
-
+const { writeFileAsync, drawWaveform } = require('./utils/helpers.js')
 const files = fs.readdirSync('./public/sounds')
 
 const options = {
@@ -14,10 +12,4 @@ const options = {
 
 console.log(files)
 
-/*
-files.forEach((file, i, arr) => {
-  Waveform(`./public/sounds/${file}`, options, (err, buffer) => {
-    fs.writeFileSync(`./public/waves/${file.replace('.mp3', '.png')}`, buffer);
-  });
-});
-*/
+files.map(drawWaveform).then(writeFileAync)

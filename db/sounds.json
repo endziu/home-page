@@ -1,1 +1,12 @@
-[{"title":"efix","waveform_url":"/waves/efix.png","sound_url":"/sounds/efix.mp3"},{"title":"prep2","waveform_url":"/waves/prep2.png","sound_url":"/sounds/prep2.mp3"}]
+[
+  {
+    "title": "efix",
+    "waveform_url": "/waves/efix.png",
+    "sound_url": "/sounds/efix.mp3"
+  },
+  {
+    "title": "prep2",
+    "waveform_url": "/waves/prep2.png",
+    "sound_url": "/sounds/prep2.mp3"
+  }
+]
