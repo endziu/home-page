@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.5.0",
     "cors": "^2.8.4",
     "express": "^4.15.2",
     "isomorphic-unfetch": "^2.0.0",
