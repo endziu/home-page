@@ -68,13 +68,13 @@ class Music extends React.Component {
       <Layout>
         <Player
           ref="player"
-          source={`${track.sound_url}`}
+          source={`${track.sound_url.substr(8)}`}
           preload={'metadata'}
           isPlaying={this.state.isPlaying}
           onTimeupdate={this.updatePos}
         />
         <Display
-          waveform_url={`${track.wave_url}`}
+          waveform_url={`${track.waveform_url.substr(8)}`}
           playPos={this.state.percentPlayed}
           onClick={this.waveClick}
         />
