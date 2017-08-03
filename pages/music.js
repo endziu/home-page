@@ -1,3 +1,6 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 
@@ -19,6 +22,7 @@ class Music extends React.Component {
     super()
     this.state = {
       currentTrack: 0,
+      currentTime: '0:00',
       isPlaying: false,
       percentPlayed: 0
     }
@@ -54,10 +58,17 @@ class Music extends React.Component {
   }
 
   updatePos(e) {
+    const date = new Date(null)
+
     const duration = this.refs.player.audio.duration || 0
     const currentTime = this.refs.player.audio.currentTime || 0
+
+    const seconds = date.setSeconds(currentTime)
+    const time = date.toISOString().substr(14, 5)
+
     this.setState({
-      percentPlayed: (currentTime / duration).toFixed(3) * 100 || 0
+      percentPlayed: (currentTime / duration).toFixed(3) * 100 || 0,
+      currentTime: time
     })
   }
 
@@ -74,6 +85,7 @@ class Music extends React.Component {
           onTimeupdate={this.updatePos}
         />
         <Display
+          time={this.state.currentTime}
           waveform_url={`${track.waveform_url.substr(8)}`}
           playPos={this.state.percentPlayed}
           onClick={this.waveClick}
