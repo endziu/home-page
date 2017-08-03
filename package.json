@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "export NODE_ENV=production && pm2 start npm --name \"next\" -- start"
+    "start": "export NODE_ENV=production && node server.js"
   },
   "keywords": [],
   "author": "",
