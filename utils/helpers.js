@@ -11,10 +11,11 @@ const readDirAsync = path =>
   )
 
 const generateData = listOfFiles =>
-  listOfFiles.map(file => ({
+  listOfFiles.map((file, i, arr) => ({
     title: `${file.replace('-', ' ').replace('.mp3', '')}`,
     waveform_url: `./public/waves/${file.replace('.mp3', '.png')}`,
-    sound_url: `./public/sounds/${file}`
+    sound_url: `./public/sounds/${file}`,
+    id: `${i}`
   }))
 
 const writeFileAsync = path => data =>
