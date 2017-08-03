@@ -9,7 +9,7 @@ export default () => (
       <Link href="/music">
         <a className={'white f4 no-underline mr3 hover-green'}>music</a>
       </Link>
-      <Link href="/dev">
+      <Link href="/web">
         <a className={'white f4 no-underline mr3 hover-yellow'}>web</a>
       </Link>
     </nav>
