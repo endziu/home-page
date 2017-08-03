@@ -14,19 +14,22 @@ app
     const server = express()
 
     server.use(cors())
+
     server.use(express.static('public'))
+
     server.get(['/api'], (req, res) => {
       res.send(tracks)
     })
 
-    server.get('/m/:id', (req, res) => {
-      const queryParams = { id: req.params.id }
-      app.render(req, res, '/music', queryParams)
-    })
+    // server.get('/m/:id', (req, res) => {
+    //   const queryParams = { id: req.params.id }
+    //   app.render(req, res, '/music', queryParams)
+    // })
 
     server.get('*', (req, res) => {
       return handle(req, res)
     })
+
     server.listen(3000, err => {
       if (err) throw err
       console.log(`> Ready on port: 3000`)
