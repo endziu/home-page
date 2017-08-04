@@ -13,13 +13,12 @@ const readDirAsync = path =>
 const generateData = listOfFiles =>
   listOfFiles.map((path, i, arr) => ({
     title: `${path.split('-').join(' ').replace('.mp3', '')}`,
-    permalink: `${path.split(' ').join('-').replace('.mp3', '').toLowerCase()}`,
+    permalink: `${path.split(' ').join('-').replace('.mp3', '')}`,
     waveform_url: `./public/waves/${path
       .split(' ')
       .join('-')
-      .replace('.mp3', '.png')
-      .toLowerCase()}`,
-    sound_url: `./public/sounds/${path.split(' ').join('-').toLowerCase()}`,
+      .replace('.mp3', '.png')}`,
+    sound_url: `./public/sounds/${path.split(' ').join('-')}`,
     id: `${i}`
   }))
 
