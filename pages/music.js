@@ -10,11 +10,13 @@ import Display from '../components/Display.js'
 import SoundList from '../components/SoundList.js'
 
 class Music extends React.Component {
-  static async getInitialProps() {
+  static async getInitialProps(context) {
+    const { id } = context.query
     const res = await fetch(`${process.env.BACKEND_URL}/api`)
     const data = await res.json()
     return {
-      tracks: data
+      tracks: data,
+      id: id
     }
   }
 
@@ -97,6 +99,7 @@ class Music extends React.Component {
           current={this.state.currentTrack}
           isPlaying={this.state.isPlaying}
         />
+        {this.props.id && <span className="white">{this.props.id}</span>}
       </Layout>
     )
   }

@@ -21,10 +21,10 @@ app
       res.send(tracks)
     })
 
-    // server.get('/m/:id', (req, res) => {
-    //   const queryParams = { id: req.params.id }
-    //   app.render(req, res, '/music', queryParams)
-    // })
+    server.get('/music/:id', (req, res) => {
+      const queryParams = { id: req.params.id }
+      app.render(req, res, '/music', queryParams)
+    })
 
     server.get('*', (req, res) => {
       return handle(req, res)
