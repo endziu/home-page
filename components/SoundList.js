@@ -9,9 +9,11 @@ const SoundList = ({ tracks, itemClick, playClick, current, isPlaying }) => (
           as={`/music/${title.permalink}`}
         >
           <span>
-            <a className="underline-hover hover-yellow pointer f4">
-              {title.title}
-            </a>
+            <span onClick={itemClick}>
+              <a className="underline-hover hover-yellow pointer f4">
+                {title.title}
+              </a>
+            </span>
             {parseInt(i) === parseInt(current) &&
               <span onClick={playClick} className="pointer f4 white">
                 {!isPlaying ? ' ▶️' : ' ⏸'}

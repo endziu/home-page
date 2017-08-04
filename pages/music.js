@@ -20,9 +20,10 @@ export default class Music extends React.Component {
     const { title } = context.query
     const res = await fetch(`${process.env.BACKEND_URL}/api`)
     const data = await res.json()
+    const permalink = title || '110untunednobassmix'
     return {
       tracks: data,
-      permalink: title
+      permalink: permalink
     }
   }
 
@@ -35,6 +36,7 @@ export default class Music extends React.Component {
       percentPlayed: 0
     }
     this.playClick = this.playClick.bind(this)
+    this.itemClick = this.itemClick.bind(this)
     this.waveClick = this.waveClick.bind(this)
     this.updatePos = this.updatePos.bind(this)
   }
@@ -46,7 +48,9 @@ export default class Music extends React.Component {
   }
 
   componentWillReceiveProps(props) {
-    this.setState({ currentTrack: findID(props.permalink, props.tracks) })
+    this.setState({
+      currentTrack: findID(props.permalink, props.tracks)
+    })
   }
 
   playClick(e) {
@@ -64,6 +68,12 @@ export default class Music extends React.Component {
     this.refs.player.audio.play()
     this.setState({
       isPlaying: true
+    })
+  }
+
+  itemClick() {
+    this.setState({
+      isPlaying: false
     })
   }
 
@@ -103,6 +113,7 @@ export default class Music extends React.Component {
         <SoundList
           tracks={this.props.tracks}
           playClick={this.playClick}
+          itemClick={this.itemClick}
           current={this.state.currentTrack}
           isPlaying={this.state.isPlaying}
         />
