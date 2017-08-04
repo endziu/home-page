@@ -1,22 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
-import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
+import Link from 'next/link'
 
 import Layout from '../components/Layout.js'
 import Player from '../components/Player.js'
 import Display from '../components/Display.js'
 import SoundList from '../components/SoundList.js'
 
-class Music extends React.Component {
+const findID = (permalink, list) => {
+  const sound = list.filter(el => el.permalink === permalink)[0]
+  if (sound) {
+    return sound.id
+  } else {
+    return -1
+  }
+}
+
+export default class Music extends React.Component {
   static async getInitialProps(context) {
-    const { id } = context.query
+    const { title } = context.query
     const res = await fetch(`${process.env.BACKEND_URL}/api`)
     const data = await res.json()
     return {
       tracks: data,
-      id: id
+      permalink: title
     }
   }
 
@@ -28,17 +34,19 @@ class Music extends React.Component {
       isPlaying: false,
       percentPlayed: 0
     }
-    this.itemClick = this.itemClick.bind(this)
     this.playClick = this.playClick.bind(this)
     this.waveClick = this.waveClick.bind(this)
     this.updatePos = this.updatePos.bind(this)
   }
 
-  itemClick(i) {
+  componentWillMount() {
     this.setState({
-      currentTrack: i,
-      isPlaying: false
+      currentTrack: findID(this.props.permalink, this.props.tracks)
     })
+  }
+
+  componentWillReceiveProps(props) {
+    this.setState({ currentTrack: findID(props.permalink, props.tracks) })
   }
 
   playClick(e) {
@@ -75,8 +83,8 @@ class Music extends React.Component {
   }
 
   render() {
+    const id = findID(this.props.permalink, this.props.tracks)
     const track = this.props.tracks[this.state.currentTrack]
-    const titles = this.props.tracks.map(track => track.title)
     return (
       <Layout>
         <Player
@@ -93,16 +101,12 @@ class Music extends React.Component {
           onClick={this.waveClick}
         />
         <SoundList
-          titles={titles.map(t => t.toLowerCase())}
-          itemClick={this.itemClick}
+          tracks={this.props.tracks}
           playClick={this.playClick}
           current={this.state.currentTrack}
           isPlaying={this.state.isPlaying}
         />
-        {this.props.id && <span className="white">{this.props.id}</span>}
       </Layout>
     )
   }
 }
-
-export default Music

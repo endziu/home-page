@@ -21,8 +21,8 @@ app
       res.send(tracks)
     })
 
-    server.get('/music/:id', (req, res) => {
-      const queryParams = { id: req.params.id }
+    server.get('/music/:title', (req, res) => {
+      const queryParams = { title: req.params.title }
       app.render(req, res, '/music', queryParams)
     })
 
