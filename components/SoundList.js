@@ -3,23 +3,26 @@ import Link from 'next/link'
 const SoundList = ({ tracks, itemClick, playClick, current, isPlaying }) => (
   <ul className="list ma2 pa0 white mw8 center">
     {tracks.map((title, i, arr) => (
-      <li key={i} className={i === current ? 'green pb1-m' : 'pb1-m'}>
+      <li key={i}>
         <Link
           href={`/music?title=${title.permalink}`}
           as={`/music/${title.permalink}`}
         >
-          <span>
-            <span onClick={itemClick}>
-              <a className="underline-hover hover-yellow pointer f4">
-                {title.title}
-              </a>
-            </span>
-            {parseInt(i) === parseInt(current) &&
-              <span onClick={playClick} className="pointer f4 white">
-                {!isPlaying ? ' ▶️' : ' ⏸'}
-              </span>}
-          </span>
+          <a
+            onClick={itemClick}
+            className={
+              parseInt(i) === parseInt(current)
+                ? 'green link underline-hover pointer f4'
+                : 'white link underline-hover hover-yellow pointer f4'
+            }
+          >
+            {title.title}
+          </a>
         </Link>
+        {parseInt(i) === parseInt(current) &&
+          <a onClick={playClick} className="pointer f4 white">
+            {!isPlaying ? ' ▶️' : ' ⏸'}
+          </a>}
       </li>
     ))}
   </ul>
