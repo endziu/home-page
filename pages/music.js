@@ -91,7 +91,7 @@ class Music extends React.Component {
           onClick={this.waveClick}
         />
         <SoundList
-          titles={titles.sort(Math.random() - 0.5)}
+          titles={titles.map(t => t.toLowerCase())}
           itemClick={this.itemClick}
           playClick={this.playClick}
           current={this.state.currentTrack}

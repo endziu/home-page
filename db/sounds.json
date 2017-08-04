@@ -1,1 +1,152 @@
-[{"title":"110untunednobassmix","waveform_url":"./public/waves/110untunednobassmix.png","sound_url":"./public/sounds/110untunednobassmix.mp3","id":"0"},{"title":"binary blob","waveform_url":"./public/waves/binary-blob.png","sound_url":"./public/sounds/binary-blob.mp3","id":"1"},{"title":"click","waveform_url":"./public/waves/click.png","sound_url":"./public/sounds/click.mp3","id":"2"},{"title":"drone radio","waveform_url":"./public/waves/drone radio.png","sound_url":"./public/sounds/drone radio.mp3","id":"3"},{"title":"drums","waveform_url":"./public/waves/drums.png","sound_url":"./public/sounds/drums.mp3","id":"4"},{"title":"efix","waveform_url":"./public/waves/efix.png","sound_url":"./public/sounds/efix.mp3","id":"5"},{"title":"Emisions","waveform_url":"./public/waves/Emisions.png","sound_url":"./public/sounds/Emisions.mp3","id":"6"},{"title":"float on a sea of nothing","waveform_url":"./public/waves/float on a sea of nothing.png","sound_url":"./public/sounds/float on a sea of nothing.mp3","id":"7"},{"title":"Ganges","waveform_url":"./public/waves/Ganges.png","sound_url":"./public/sounds/Ganges.mp3","id":"8"},{"title":"glitchsz","waveform_url":"./public/waves/glitchsz.png","sound_url":"./public/sounds/glitchsz.mp3","id":"9"},{"title":"kliks radio","waveform_url":"./public/waves/kliks-radio.png","sound_url":"./public/sounds/kliks-radio.mp3","id":"10"},{"title":"lengths","waveform_url":"./public/waves/lengths.png","sound_url":"./public/sounds/lengths.mp3","id":"11"},{"title":"Metafizykant","waveform_url":"./public/waves/Metafizykant.png","sound_url":"./public/sounds/Metafizykant.mp3","id":"12"},{"title":"micro situations","waveform_url":"./public/waves/micro-situations.png","sound_url":"./public/sounds/micro-situations.mp3","id":"13"},{"title":"mirrorRoom","waveform_url":"./public/waves/mirrorRoom.png","sound_url":"./public/sounds/mirrorRoom.mp3","id":"14"},{"title":"One Minute","waveform_url":"./public/waves/One Minute.png","sound_url":"./public/sounds/One Minute.mp3","id":"15"},{"title":"Plugged in for a while","waveform_url":"./public/waves/Plugged in for a while.png","sound_url":"./public/sounds/Plugged in for a while.mp3","id":"16"},{"title":"prep2","waveform_url":"./public/waves/prep2.png","sound_url":"./public/sounds/prep2.mp3","id":"17"},{"title":"Pół Kawałka","waveform_url":"./public/waves/Pół Kawałka.png","sound_url":"./public/sounds/Pół Kawałka.mp3","id":"18"},{"title":"scenario","waveform_url":"./public/waves/scenario.png","sound_url":"./public/sounds/scenario.mp3","id":"19"},{"title":"Shtokha Zen","waveform_url":"./public/waves/Shtokha Zen.png","sound_url":"./public/sounds/Shtokha Zen.mp3","id":"20"},{"title":"tapes","waveform_url":"./public/waves/tapes.png","sound_url":"./public/sounds/tapes.mp3","id":"21"},{"title":"trigger piano bas 2","waveform_url":"./public/waves/trigger piano bas 2.png","sound_url":"./public/sounds/trigger piano bas 2.mp3","id":"22"},{"title":"untuned garden","waveform_url":"./public/waves/untuned-garden.png","sound_url":"./public/sounds/untuned-garden.mp3","id":"23"},{"title":"Vector","waveform_url":"./public/waves/Vector.png","sound_url":"./public/sounds/Vector.mp3","id":"24"}]
+[
+  {
+    "title": "110untunednobassmix",
+    "waveform_url": "./public/waves/110untunednobassmix.png",
+    "sound_url": "./public/sounds/110untunednobassmix.mp3",
+    "id": "0"
+  },
+  {
+    "title": "binary blob",
+    "waveform_url": "./public/waves/binary-blob.png",
+    "sound_url": "./public/sounds/binary-blob.mp3",
+    "id": "1"
+  },
+  {
+    "title": "click",
+    "waveform_url": "./public/waves/click.png",
+    "sound_url": "./public/sounds/click.mp3",
+    "id": "2"
+  },
+  {
+    "title": "drone radio",
+    "waveform_url": "./public/waves/drone radio.png",
+    "sound_url": "./public/sounds/drone radio.mp3",
+    "id": "3"
+  },
+  {
+    "title": "drums",
+    "waveform_url": "./public/waves/drums.png",
+    "sound_url": "./public/sounds/drums.mp3",
+    "id": "4"
+  },
+  {
+    "title": "efix",
+    "waveform_url": "./public/waves/efix.png",
+    "sound_url": "./public/sounds/efix.mp3",
+    "id": "5"
+  },
+  {
+    "title": "Emisions",
+    "waveform_url": "./public/waves/Emisions.png",
+    "sound_url": "./public/sounds/Emisions.mp3",
+    "id": "6"
+  },
+  {
+    "title": "float on a sea of nothing",
+    "waveform_url": "./public/waves/float on a sea of nothing.png",
+    "sound_url": "./public/sounds/float on a sea of nothing.mp3",
+    "id": "7"
+  },
+  {
+    "title": "Ganges",
+    "waveform_url": "./public/waves/Ganges.png",
+    "sound_url": "./public/sounds/Ganges.mp3",
+    "id": "8"
+  },
+  {
+    "title": "glitchsz",
+    "waveform_url": "./public/waves/glitchsz.png",
+    "sound_url": "./public/sounds/glitchsz.mp3",
+    "id": "9"
+  },
+  {
+    "title": "kliks radio",
+    "waveform_url": "./public/waves/kliks-radio.png",
+    "sound_url": "./public/sounds/kliks-radio.mp3",
+    "id": "10"
+  },
+  {
+    "title": "lengths",
+    "waveform_url": "./public/waves/lengths.png",
+    "sound_url": "./public/sounds/lengths.mp3",
+    "id": "11"
+  },
+  {
+    "title": "Metafizykant",
+    "waveform_url": "./public/waves/Metafizykant.png",
+    "sound_url": "./public/sounds/Metafizykant.mp3",
+    "id": "12"
+  },
+  {
+    "title": "micro situations",
+    "waveform_url": "./public/waves/micro-situations.png",
+    "sound_url": "./public/sounds/micro-situations.mp3",
+    "id": "13"
+  },
+  {
+    "title": "mirrorRoom",
+    "waveform_url": "./public/waves/mirrorRoom.png",
+    "sound_url": "./public/sounds/mirrorRoom.mp3",
+    "id": "14"
+  },
+  {
+    "title": "One Minute",
+    "waveform_url": "./public/waves/One Minute.png",
+    "sound_url": "./public/sounds/One Minute.mp3",
+    "id": "15"
+  },
+  {
+    "title": "Plugged in for a while",
+    "waveform_url": "./public/waves/Plugged in for a while.png",
+    "sound_url": "./public/sounds/Plugged in for a while.mp3",
+    "id": "16"
+  },
+  {
+    "title": "prep2",
+    "waveform_url": "./public/waves/prep2.png",
+    "sound_url": "./public/sounds/prep2.mp3",
+    "id": "17"
+  },
+  {
+    "title": "Pół Kawałka",
+    "waveform_url": "./public/waves/Pół Kawałka.png",
+    "sound_url": "./public/sounds/Pół Kawałka.mp3",
+    "id": "18"
+  },
+  {
+    "title": "scenario",
+    "waveform_url": "./public/waves/scenario.png",
+    "sound_url": "./public/sounds/scenario.mp3",
+    "id": "19"
+  },
+  {
+    "title": "Shtokha Zen",
+    "waveform_url": "./public/waves/Shtokha Zen.png",
+    "sound_url": "./public/sounds/Shtokha Zen.mp3",
+    "id": "20"
+  },
+  {
+    "title": "tapes",
+    "waveform_url": "./public/waves/tapes.png",
+    "sound_url": "./public/sounds/tapes.mp3",
+    "id": "21"
+  },
+  {
+    "title": "trigger piano bas 2",
+    "waveform_url": "./public/waves/trigger piano bas 2.png",
+    "sound_url": "./public/sounds/trigger piano bas 2.mp3",
+    "id": "22"
+  },
+  {
+    "title": "untuned garden",
+    "waveform_url": "./public/waves/untuned-garden.png",
+    "sound_url": "./public/sounds/untuned-garden.mp3",
+    "id": "23"
+  },
+  {
+    "title": "Vector",
+    "waveform_url": "./public/waves/Vector.png",
+    "sound_url": "./public/sounds/Vector.mp3",
+    "id": "24"
+  }
+]
