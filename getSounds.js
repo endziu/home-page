@@ -12,7 +12,7 @@ const readDirAsync = path =>
 
 const generateData = listOfFiles =>
   listOfFiles.map((path, i, arr) => ({
-    title: `${path.split('-').join(' ').replace('.mp3', '')}`,
+    title: `${path.split('-').join(' ').replace('.mp3', '').toLowerCase()}`,
     permalink: `${path.split(' ').join('-').replace('.mp3', '')}`,
     waveform_url: `./public/waves/${path
       .split(' ')
