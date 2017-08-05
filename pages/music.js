@@ -36,7 +36,6 @@ export default class Music extends React.Component {
       percentPlayed: 0
     }
     this.playClick = this.playClick.bind(this)
-    this.itemClick = this.itemClick.bind(this)
     this.waveClick = this.waveClick.bind(this)
     this.updatePos = this.updatePos.bind(this)
   }
@@ -48,19 +47,17 @@ export default class Music extends React.Component {
   }
 
   componentWillReceiveProps(props) {
-    this.setState({
-      currentTrack: findID(props.permalink, props.tracks)
-    })
+    const id = findID(props.permalink, props.tracks)
+    this.setState(prevState => ({
+      currentTrack: id,
+      isPlaying: id === prevState.currentTrack ? true : false
+    }))
   }
 
   playClick(e) {
-    
     this.refs.player.setPlaybackPercent(0)
     this.refs.player.togglePlay()
-    this.setState((prevState, props) => {
-      console.log('click', !prevState.isPlaying)
-      return {isPlaying: !prevState.isPlaying}
-    })
+    this.setState((prevState, props) => ({ isPlaying: !prevState.isPlaying }))
   }
 
   waveClick(e) {
@@ -70,12 +67,6 @@ export default class Music extends React.Component {
     this.refs.player.audio.play()
     this.setState({
       isPlaying: true
-    })
-  }
-
-  itemClick() {
-    this.setState({
-      isPlaying: false
     })
   }
 
@@ -97,7 +88,6 @@ export default class Music extends React.Component {
   render() {
     const id = findID(this.props.permalink, this.props.tracks)
     const track = this.props.tracks[this.state.currentTrack]
-    console.log(this.state.isPlaying)
     return (
       <Layout>
         <Player
@@ -111,12 +101,11 @@ export default class Music extends React.Component {
           time={this.state.currentTime}
           waveform_url={`${track.waveform_url.substr(8)}`}
           playPos={this.state.percentPlayed}
-          onClick={this.waveClick}
+          waveClick={this.waveClick}
         />
         <SoundList
           tracks={this.props.tracks}
           playClick={this.playClick}
-          itemClick={this.itemClick}
           current={this.state.currentTrack}
           isPlaying={this.state.isPlaying}
         />
