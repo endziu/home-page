@@ -54,10 +54,12 @@ export default class Music extends React.Component {
   }
 
   playClick(e) {
+    
     this.refs.player.setPlaybackPercent(0)
     this.refs.player.togglePlay()
-    this.setState({
-      isPlaying: !this.state.isPlaying
+    this.setState((prevState, props) => {
+      console.log('click', !prevState.isPlaying)
+      return {isPlaying: !prevState.isPlaying}
     })
   }
 
@@ -95,6 +97,7 @@ export default class Music extends React.Component {
   render() {
     const id = findID(this.props.permalink, this.props.tracks)
     const track = this.props.tracks[this.state.currentTrack]
+    console.log(this.state.isPlaying)
     return (
       <Layout>
         <Player

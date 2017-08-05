@@ -3,10 +3,11 @@ import Link from 'next/link'
 const SoundList = ({ tracks, itemClick, playClick, current, isPlaying }) => (
   <ul className="list ma2 pa0 white mw8 center">
     {tracks.map((title, i, arr) => (
-      <li key={i} onClick={itemClick}>
+      <li key={i}>
         <Link
           href={`/music?title=${title.permalink}`}
           as={`/music/${title.permalink}`}
+          onClick={itemClick}
         >
           <a
             className={
