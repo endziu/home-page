@@ -35,87 +35,80 @@
     "id": "4"
   },
   {
-    "title": "one minute",
-    "permalink": "One-Minute",
-    "waveform_url": "./public/waves/One-Minute.png",
-    "sound_url": "./public/sounds/One-Minute.mp3",
-    "id": "5"
-  },
-  {
     "title": "scenario",
     "permalink": "scenario",
     "waveform_url": "./public/waves/scenario.png",
     "sound_url": "./public/sounds/scenario.mp3",
-    "id": "6"
+    "id": "5"
   },
   {
     "title": "micro situations",
     "permalink": "micro-situations",
     "waveform_url": "./public/waves/micro-situations.png",
     "sound_url": "./public/sounds/micro-situations.mp3",
-    "id": "7"
+    "id": "6"
   },
   {
     "title": "binary blob",
     "permalink": "binary-blob",
     "waveform_url": "./public/waves/binary-blob.png",
     "sound_url": "./public/sounds/binary-blob.mp3",
-    "id": "8"
+    "id": "7"
   },
   {
     "title": "untuned garden",
     "permalink": "untuned-garden",
     "waveform_url": "./public/waves/untuned-garden.png",
     "sound_url": "./public/sounds/untuned-garden.mp3",
-    "id": "9"
+    "id": "8"
   },
   {
     "title": "kliks radio",
     "permalink": "kliks-radio",
     "waveform_url": "./public/waves/kliks-radio.png",
     "sound_url": "./public/sounds/kliks-radio.mp3",
-    "id": "10"
+    "id": "9"
   },
   {
     "title": "emisions",
     "permalink": "Emisions",
     "waveform_url": "./public/waves/Emisions.png",
     "sound_url": "./public/sounds/Emisions.mp3",
-    "id": "11"
+    "id": "10"
   },
   {
     "title": "lengths",
     "permalink": "lengths",
     "waveform_url": "./public/waves/lengths.png",
     "sound_url": "./public/sounds/lengths.mp3",
-    "id": "12"
+    "id": "11"
   },
   {
     "title": "plugged in for a while",
     "permalink": "Plugged-in-for-a-while",
     "waveform_url": "./public/waves/Plugged-in-for-a-while.png",
     "sound_url": "./public/sounds/Plugged-in-for-a-while.mp3",
-    "id": "13"
+    "id": "12"
   },
   {
     "title": "tapes",
     "permalink": "tapes",
     "waveform_url": "./public/waves/tapes.png",
     "sound_url": "./public/sounds/tapes.mp3",
-    "id": "14"
+    "id": "13"
   },
   {
     "title": "prep2",
     "permalink": "prep2",
     "waveform_url": "./public/waves/prep2.png",
     "sound_url": "./public/sounds/prep2.mp3",
-    "id": "15"
+    "id": "14"
   },
   {
     "title": "ganges",
     "permalink": "Ganges",
     "waveform_url": "./public/waves/Ganges.png",
     "sound_url": "./public/sounds/Ganges.mp3",
-    "id": "16"
+    "id": "15"
   }
 ]
