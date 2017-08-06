@@ -14,16 +14,22 @@ const Index = props => (
         twitter
       </a>
       <a
+        href="https://github.com/endziu"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        github
+      </a>
+      <a
         href="https://soundcloud.com/abstract-machines"
         className="link pl2 white underline-hover hover-yellow"
       >
         soundcloud
       </a>
       <a
-        href="https://github.com/endziu"
+        href="https://youtube.com/https://www.youtube.com/user/1000AbstractMachines"
         className="link pl2 white underline-hover hover-yellow"
       >
-        github
+        youtube
       </a>
       <pre>
         web-dev
@@ -33,6 +39,12 @@ const Index = props => (
         className="link pl2 white underline-hover hover-yellow"
       >
         sound map
+      </a>
+      <a
+        href="https://endziu.xyz"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        old home-page
       </a>
     </div>
   </Layout>
