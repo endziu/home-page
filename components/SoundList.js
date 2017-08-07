@@ -32,20 +32,21 @@ const PlayButton = ({ isPlaying, playClick, i, current }) => (
   </span>
 )
 
+const makeItem = (current, isPlaying, playClick) => (t, i, arr) => (
+  <Item key={i}>
+    <Title track={t} i={i} current={current} />
+    <PlayButton
+      i={i}
+      current={current}
+      isPlaying={isPlaying}
+      playClick={playClick}
+    />
+  </Item>
+)
+
 const SoundList = ({ tracks, playClick, current, isPlaying }) => (
   <ul className="list ma2 pa0 white mw8 center">
-    <h2>have a listen!</h2>
-    {tracks.map((t, i, arr) => (
-      <Item key={i}>
-        <Title track={t} i={i} current={current} />
-        <PlayButton
-          i={i}
-          current={current}
-          isPlaying={isPlaying}
-          playClick={playClick}
-        />
-      </Item>
-    ))}
+    {tracks.map(makeItem(current, isPlaying, playClick))}
   </ul>
 )
 
