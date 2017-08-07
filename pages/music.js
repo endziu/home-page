@@ -41,8 +41,9 @@ export default class Music extends React.Component {
   }
 
   componentWillMount() {
+    const id = findID(this.props.permalink, this.props.tracks)
     this.setState({
-      currentTrack: findID(this.props.permalink, this.props.tracks)
+      currentTrack: id
     })
   }
 
@@ -50,14 +51,16 @@ export default class Music extends React.Component {
     const id = findID(props.permalink, props.tracks)
     this.setState(prevState => ({
       currentTrack: id,
-      isPlaying: id === prevState.currentTrack ? true : false
+      isPlaying: prevState.isPlaying
+        ? id === prevState.currentTrack ? true : false
+        : false
     }))
   }
 
   playClick(e) {
     this.refs.player.setPlaybackPercent(0)
     this.refs.player.togglePlay()
-    this.setState((prevState, props) => ({ isPlaying: !prevState.isPlaying }))
+    this.setState(prevState => ({ isPlaying: !prevState.isPlaying }))
   }
 
   waveClick(e) {
@@ -86,7 +89,6 @@ export default class Music extends React.Component {
   }
 
   render() {
-    const id = findID(this.props.permalink, this.props.tracks)
     const track = this.props.tracks[this.state.currentTrack]
     return (
       <Layout>
