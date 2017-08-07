@@ -10,8 +10,10 @@ const readDirAsync = path =>
     )
   )
 
+//.sort(() => Math.random() * 2 - 1)
+
 const generateData = listOfFiles =>
-  listOfFiles.sort(() => Math.random() * 2 - 1).map((path, i, arr) => ({
+  listOfFiles.map((path, i, arr) => ({
     title: `${path.split('-').join(' ').replace('.mp3', '').toLowerCase()}`,
     permalink: `${path.split(' ').join('-').replace('.mp3', '')}`,
     waveform_url: `./public/waves/${path
