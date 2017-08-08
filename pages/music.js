@@ -105,7 +105,6 @@ export default class Music extends React.Component {
           playPos={this.state.percentPlayed}
           waveClick={this.waveClick}
         />
-        <h2 className="mw8 center white fw1">have a listen!</h2>
         <SoundList
           tracks={this.props.tracks}
           playClick={this.playClick}

@@ -26,7 +26,7 @@ const Index = props => (
         soundcloud
       </a>
       <a
-        href="https://youtube.com/https://www.youtube.com/user/1000AbstractMachines"
+        href="https://www.youtube.com/user/1000AbstractMachines"
         className="link pl2 white underline-hover hover-yellow"
       >
         youtube

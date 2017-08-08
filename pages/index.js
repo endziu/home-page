@@ -4,13 +4,11 @@ import SvgLink from '../components/SvgLink.js'
 const Index = () => (
   <Layout>
     <div className="pl2 white mw8 center">
-      <h2>hello, I'm Andrzej</h2>
-      <ul className="list pa0">
-        <li><SvgLink /></li>
-        <li><SvgLink /></li>
-        <li><SvgLink /></li>
-        <li><SvgLink /></li>
-      </ul>
+      <h2 className="mv1">hello, I'm Andrzej</h2>
+      <div className="measure pa0 hide-child">
+        {`I do music, sound and JavaScript.`}
+        <SvgLink />
+      </div>
     </div>
   </Layout>
 )
