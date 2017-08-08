@@ -1,7 +1,7 @@
 import Layout from '../components/Layout.js'
 
-const Index = () => (
-  <Layout>
+const Index = props => (
+  <Layout path={props.url.pathname}>
     <div className="pl2 white mw8 center flex flex-column">
       <pre>
         web development

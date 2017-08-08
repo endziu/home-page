@@ -4,6 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 
 export default ({
+  path,
   children,
   title = 'd92e6a9fbbbb08524c50292a6918aa6de713fb30c4663dd615e3862227d5bc48'
 }) => (
@@ -17,7 +18,7 @@ export default ({
         href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"
       />
     </Head>
-    <Header />
+    <Header path={path} />
 
     {children}
 
