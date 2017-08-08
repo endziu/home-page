@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Router from 'next/router'
 
-export default props => (
+const Header = props => (
   <header className="pv1 pl2 mw8 center bb bw1 b--green">
     <nav className="f3-ns f4 flex items-center">
       <Link href="/">
@@ -22,3 +22,5 @@ export default props => (
     </nav>
   </header>
 )
+
+export default Header
