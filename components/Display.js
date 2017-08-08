@@ -9,7 +9,7 @@ const Display = ({ waveform_url, playPos = 0, waveClick, time = '0:00' }) => (
     }}
   >
     <div
-      className="h3 h5-l h4-m absolute bg-black-40"
+      className="h3 h5-l h4-m absolute bg-black-80"
       style={{
         width: `${playPos}%`,
         transition: 'all 0.1s ease-in-out'

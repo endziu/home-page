@@ -7,7 +7,7 @@ export default ({
   children,
   title = 'd92e6a9fbbbb08524c50292a6918aa6de713fb30c4663dd615e3862227d5bc48'
 }) => (
-  <div className="sans-serif vh-100 pa2">
+  <div className="sans-serif ph2 ph3-m ph4-l">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -23,7 +23,7 @@ export default ({
 
     <Footer />
     <style jsx global>{`
-      html {background: #000;}
+      html {background: #001b44;}
     `}</style>
   </div>
 )
