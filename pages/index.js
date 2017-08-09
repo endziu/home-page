@@ -36,6 +36,7 @@ const Index = props => (
           I post music as
           {' '}
           <a
+            target="_blank"
             href="https://soundcloud.com/abstract-machines"
             className="link blue dim no-underline"
           >
@@ -44,7 +45,7 @@ const Index = props => (
           {'.'}
         </p>
         <p className="mv1">
-          I also host home sounds
+          I also host some sounds
           {' '}
           <a href="/music" className="link blue dim no-underline">
             here

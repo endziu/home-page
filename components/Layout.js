@@ -24,7 +24,7 @@ export default ({
 
     <Footer />
     <style jsx global>{`
-      html {background: #000;}
+      html {background: #001b44;}
     `}</style>
   </div>
 )
