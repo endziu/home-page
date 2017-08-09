@@ -3,9 +3,9 @@ import Layout from '../components/Layout.js'
 const Index = props => (
   <Layout path={props.url.pathname}>
     <div className="pl2 white mw8 center flex flex-column">
-      <pre>
+      <h2>
         web development
-      </pre>
+      </h2>
       <a
         target="_blank"
         href="https://dzwiekowamapa.pl"
@@ -21,9 +21,9 @@ const Index = props => (
         old home page
       </a>
 
-      <pre>
+      <h2>
         music recording
-      </pre>
+      </h2>
       <a
         target="_blank"
         href="https://mombe.bandcamp.com/album/momb-2"
@@ -46,9 +46,9 @@ const Index = props => (
         sewa kaffo
       </a>
 
-      <pre>
-        music videos
-      </pre>
+      <h2>
+        music for videos
+      </h2>
 
       <a
         target="_blank"
@@ -72,9 +72,9 @@ const Index = props => (
         ty i rys społeczny
       </a>
 
-      <pre>
+      <h2>
         sound & music for movies
-      </pre>
+      </h2>
       <a
         target="_blank"
         href="http://www.filmpolski.pl/fp/index.php?film=1217848"
@@ -111,9 +111,9 @@ const Index = props => (
         czarny
       </a>
 
-      <pre>
+      <h2>
         music for tv & ads
-      </pre>
+      </h2>
       <a
         target="_blank"
         href="https://vimeo.com/185946610"
@@ -129,9 +129,9 @@ const Index = props => (
         gra w ciemno
       </a>
 
-      <pre>
+      <h2>
         AV performances
-      </pre>
+      </h2>
       <a
         target="_blank"
         href="https://vimeo.com/123825272"

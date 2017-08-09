@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Router from 'next/router'
 
 const Header = props => (
-  <header className="pv1 pl2 mw8 center bb bw1 b--green">
+  <header className="pv1 pl2 pa3-l mw8 center bb bw1 b--green">
     <nav className="f3-ns f4 flex items-center">
       <Link href="/">
         <a
