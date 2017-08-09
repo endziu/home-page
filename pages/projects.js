@@ -47,14 +47,78 @@ const Index = props => (
       </a>
 
       <pre>
-        film & tv
+        sound & music for movies
       </pre>
       <a
         target="_blank"
-        href="http://www.filmpolski.pl/fp/index.php?osoba=1146102"
+        href="http://www.filmpolski.pl/fp/index.php?film=1217848"
         className="link pl2 white underline-hover hover-yellow"
       >
-        film polski
+        rzeźnia numer 1
+      </a>
+      <a
+        target="_blank"
+        href="http://www.filmpolski.pl/fp/index.php?film=1216732"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        krótka histeria czasu
+      </a>
+      <a
+        target="_blank"
+        href="http://www.filmpolski.pl/fp/index.php?film=1214406"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        krew z nosa
+      </a>
+      <a
+        target="_blank"
+        href="http://www.filmpolski.pl/fp/index.php?film=4224943"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        pokój
+      </a>
+      <a
+        target="_blank"
+        href="http://www.filmpolski.pl/fp/index.php?film=1221991"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        czarny
+      </a>
+      <pre>
+        music videos
+      </pre>
+
+      <a
+        target="_blank"
+        href="https://vimeo.com/85443642"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        micro situations
+      </a>
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=DgTGhln-rlM"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        ucieczka ze szklanej kuli
+      </a>
+      <a
+        target="_blank"
+        href="https://vimeo.com/11533775"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        ty i rys społeczny
+      </a>
+
+      <pre>
+        music for tv & ads
+      </pre>
+      <a
+        target="_blank"
+        href="https://vimeo.com/185946610"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        ArC2
       </a>
       <a
         target="_blank"
@@ -69,7 +133,7 @@ const Index = props => (
       </pre>
       <a
         target="_blank"
-        href="https://www.youtube.com/watch?v=NkvSuzg4KF8"
+        href="https://vimeo.com/123825272"
         className="link pl2 white underline-hover hover-yellow"
       >
         live @ceta
