@@ -12,7 +12,7 @@ const Header = props => (
               : 'white hover-blue no-underline mr3'
           }
         >
-          abstract machines
+          endziu.xyz
         </a>
       </Link>
       <Link href="/music?title=110untunednobassmix" as="/music">

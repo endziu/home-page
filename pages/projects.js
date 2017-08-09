@@ -22,21 +22,28 @@ const Index = props => (
       </a>
 
       <pre>
-        AV performances
+        music recording
       </pre>
       <a
         target="_blank"
-        href="https://www.youtube.com/watch?v=NkvSuzg4KF8"
+        href="https://mombe.bandcamp.com/album/momb-2"
         className="link pl2 white underline-hover hover-yellow"
       >
-        live @ceta
+        mombe
       </a>
       <a
         target="_blank"
-        href="https://www.youtube.com/watch?v=ZpCya0Pj47E"
+        href="https://thejazzstatues.bandcamp.com/album/the-jazz-statues-conquer"
         className="link pl2 white underline-hover hover-yellow"
       >
-        live @Puzzle
+        the jazz statues
+      </a>
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=S_WFWuoMEEk"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        sewa kaffo
       </a>
 
       <pre>
@@ -56,6 +63,25 @@ const Index = props => (
       >
         gra w ciemno
       </a>
+
+      <pre>
+        AV performances
+      </pre>
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=NkvSuzg4KF8"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        live @ceta
+      </a>
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=ZpCya0Pj47E"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        live @Puzzle
+      </a>
+
     </div>
   </Layout>
 )

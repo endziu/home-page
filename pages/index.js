@@ -4,8 +4,8 @@ import SvgLink from '../components/SvgLink.js'
 const Index = props => (
   <Layout path={props.url.pathname}>
     <div className="pl2 white mw8 center">
-      <h2 className="mv1">hello, I'm Andrzej</h2>
-      <div className="measure-narrow pa0">
+      <h2 className="mv1">hello, I'm Andrzej Koper</h2>
+      <div className="measure pa0">
         {`I do music, sound and JavaScript.`}
         <hr />
         {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`}
