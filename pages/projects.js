@@ -47,6 +47,32 @@ const Index = props => (
       </a>
 
       <pre>
+        music videos
+      </pre>
+
+      <a
+        target="_blank"
+        href="https://vimeo.com/85443642"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        micro situations
+      </a>
+      <a
+        target="_blank"
+        href="https://www.youtube.com/watch?v=DgTGhln-rlM"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        ucieczka ze szklanej kuli
+      </a>
+      <a
+        target="_blank"
+        href="https://vimeo.com/11533775"
+        className="link pl2 white underline-hover hover-yellow"
+      >
+        ty i rys społeczny
+      </a>
+
+      <pre>
         sound & music for movies
       </pre>
       <a
@@ -83,31 +109,6 @@ const Index = props => (
         className="link pl2 white underline-hover hover-yellow"
       >
         czarny
-      </a>
-      <pre>
-        music videos
-      </pre>
-
-      <a
-        target="_blank"
-        href="https://vimeo.com/85443642"
-        className="link pl2 white underline-hover hover-yellow"
-      >
-        micro situations
-      </a>
-      <a
-        target="_blank"
-        href="https://www.youtube.com/watch?v=DgTGhln-rlM"
-        className="link pl2 white underline-hover hover-yellow"
-      >
-        ucieczka ze szklanej kuli
-      </a>
-      <a
-        target="_blank"
-        href="https://vimeo.com/11533775"
-        className="link pl2 white underline-hover hover-yellow"
-      >
-        ty i rys społeczny
       </a>
 
       <pre>
