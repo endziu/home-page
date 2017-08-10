@@ -4,10 +4,14 @@ import SvgLink from '../components/SvgLink.js'
 const Index = props => (
   <Layout path={props.url.pathname}>
     <div className="pl2 white mw8 center">
-      <h2 className="mv1 f3 f2-m f1-l">hello, I'm Andrzej Koper</h2>
+      <h2 className="f2 f1-m f-headline-l mv2 mv3-ns ml0 mh0">
+        hello, I'm Andrzej
+      </h2>
       <div className="measure pa0">
-        {`I make music, sounds and JavaScript.`}
-        <hr />
+        <h2 className="ma0 f4 f3-ns">
+          I make music, sounds & JavaScript.
+        </h2>
+        <hr className="mb3-l mb2-m" />
         <p className="mv1">
           code I write is open source on
           {' '}
@@ -21,7 +25,7 @@ const Index = props => (
           {'.'}
         </p>
         <p className="mv1">
-          follow me on twitter
+          you can follow me on twitter
           {' '}
           <a
             target="_blank"
@@ -33,7 +37,7 @@ const Index = props => (
           {'. '}
         </p>
         <p className="mv1">
-          I post music as
+          I post music online as
           {' '}
           <a
             target="_blank"
@@ -44,7 +48,7 @@ const Index = props => (
           </a>
         </p>
         <p className="mv1">
-          and I also host some sounds
+          and I also keep some over
           {' '}
           <a href="/music" className="link blue dim no-underline">
             here
