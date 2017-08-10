@@ -8,10 +8,10 @@ const Index = props => (
         hello, I'm Andrzej
       </h2>
       <div className="measure pa0">
-        <h2 className="ma0 f4 f3-ns">
+        <h2 className="ma0 f4 f3-ns mb4-l mb3-m mb2">
           I make music, sounds & JavaScript.
         </h2>
-        <hr className="mb3-l mb2-m" />
+        <hr />
         <p className="mv1">
           code I write is open source on
           {' '}
@@ -48,13 +48,26 @@ const Index = props => (
           </a>
         </p>
         <p className="mv1">
-          and I also keep some over
+          and I also keep some music over
           {' '}
           <a href="/music" className="link blue dim no-underline">
             here
           </a>
           {'. '}
         </p>
+        <div className="measure-narrow">
+          <hr />
+          <p className="mv1">
+            feel free to send me an
+            {' '}
+            <a
+              href="mailto:koper.andzrej@gmail.com"
+              className="link blue dim no-underline"
+            >
+              email
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </Layout>
