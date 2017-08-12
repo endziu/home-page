@@ -61,7 +61,7 @@ const Index = props => (
             feel free to send me an
             {' '}
             <a
-              href="mailto:koper.andzrej@gmail.com"
+              href="mailto:koper.andzrzej@gmail.com"
               className="link blue dim no-underline"
             >
               email
