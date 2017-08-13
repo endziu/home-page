@@ -25,18 +25,6 @@ const Index = props => (
           {'.'}
         </p>
         <p className="mv1">
-          you can follow me on twitter
-          {' '}
-          <a
-            target="_blank"
-            href="https://twitter.com/1000machines"
-            className="link blue dim no-underline"
-          >
-            @1000machines
-          </a>
-          {'. '}
-        </p>
-        <p className="mv1">
           I post music online as
           {' '}
           <a
@@ -55,6 +43,42 @@ const Index = props => (
           </a>
           {'. '}
         </p>
+        <p className="mv1">
+          you can follow me on twitter
+          {' '}
+          <a
+            target="_blank"
+            href="https://twitter.com/1000machines"
+            className="link blue dim no-underline"
+          >
+            @1000machines
+          </a>
+          {'. '}
+        </p>
+        <div className="measure">
+          <hr />
+          <p className="mv1">
+            I support cryptocurrencies:
+          </p>
+          <p className="mv1">
+            {`bitcoin: `}
+            <a
+              href="/imgs/btc-qr-code.png"
+              className="link blue dim no-underline"
+            >
+              1qa4xA4DXR26oPhXXAvy9ivByDYXkmhpU
+            </a>
+          </p>
+          <p className="mv1">
+            {`ethereum: `}
+            <a
+              href="/imgs/eth-qr-code.png"
+              className="link blue dim no-underline"
+            >
+              0x10993B9C3c3a51D613326AEa994CeF63dA86588E
+            </a>
+          </p>
+        </div>
         <div className="measure-narrow">
           <hr />
           <p className="mv1">
