@@ -75,7 +75,7 @@ const Index = props => (
               href="/imgs/eth-qr-code.png"
               className="link blue dim no-underline"
             >
-              0x10993B9C3c3a51D613326AEa994CeF63dA86588E
+              0xE8e2efeaf8F0a6711b915076Bd1724079B34BF79
             </a>
           </p>
         </div>
