@@ -1,8 +1,10 @@
 const { spawn } = require('child_process')
 const sounds = require('./db/sounds.json')
 
-const ffmpeg = (sound, i, arr) => {
-  spawn(
+console.log('spawning ffmpeg for: ')
+
+const drawWaves = sound => {
+  const draw = spawn(
     'ffmpeg',
     [
       '-y',
@@ -14,8 +16,15 @@ const ffmpeg = (sound, i, arr) => {
       '1',
       sound.waveform_url
     ],
-    console.log(sound)
+    console.log(sound.sound_url)
+  )
+  draw.on(
+    'close',
+    code =>
+      (code === 0
+        ? console.log('done', sound.waveform_url)
+        : console.log('process ended with', code))
   )
 }
 
-sounds.map(ffmpeg)
+sounds.map(drawWaves)

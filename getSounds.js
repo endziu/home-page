@@ -12,15 +12,19 @@ const readDirAsync = path =>
 
 //.sort(() => Math.random() * 2 - 1)
 
+const extractTitle = path =>
+  path.split('-').join(' ').replace('.mp3', '').toLowerCase()
+const extractWaveLink = path =>
+  path.split(' ').join('-').replace('.mp3', '.png')
+const extractLink = path => path.split(' ').join('-').replace('.mp3', '')
+const formatUrl = path => path.split(' ').join('-')
+
 const generateData = listOfFiles =>
-  listOfFiles.map((path, i, arr) => ({
-    title: `${path.split('-').join(' ').replace('.mp3', '').toLowerCase()}`,
-    permalink: `${path.split(' ').join('-').replace('.mp3', '')}`,
-    waveform_url: `./public/waves/${path
-      .split(' ')
-      .join('-')
-      .replace('.mp3', '.png')}`,
-    sound_url: `./public/sounds/${path.split(' ').join('-')}`,
+  listOfFiles.map((path, i) => ({
+    title: `${extractTitle(path)}`,
+    permalink: `${extractLink(path)}`,
+    waveform_url: `./public/waves/${extractWaveLink(path)}`,
+    sound_url: `./public/sounds/${formatUrl(path)}`,
     id: `${i}`
   }))
 
