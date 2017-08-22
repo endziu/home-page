@@ -9,7 +9,7 @@ const Index = props => (
       </h2>
       <div className="measure pa0">
         <h2 className="ma0 f4 f3-ns mb4-l mb3-m mb2">
-          I make music, sounds & JavaScript.
+          {`I make music, sounds & JavaScript.`}
         </h2>
         <hr />
         <p className="mv1">
