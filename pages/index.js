@@ -5,7 +5,7 @@ const Index = props => (
   <Layout path={props.url.pathname}>
     <div className="pl2 white mw8 center">
       <h2 className="f2 f1-m f-headline-l mv2 mv3-ns ml0 mh0">
-        hello, I'm Andrzej
+        {`hello, I'm Andrzej`}
       </h2>
       <div className="measure pa0">
         <h2 className="ma0 f4 f3-ns mb4-l mb3-m mb2">
@@ -13,8 +13,7 @@ const Index = props => (
         </h2>
         <hr />
         <p className="mv1">
-          code I write is open source on
-          {' '}
+          {`code I write is open source on `}
           <a
             target="_blank"
             href="https://github.com/endziu"
@@ -25,8 +24,7 @@ const Index = props => (
           {'.'}
         </p>
         <p className="mv1">
-          I post music online as
-          {' '}
+          {`I post music online as `}
           <a
             target="_blank"
             href="https://soundcloud.com/abstract-machines"
@@ -36,16 +34,14 @@ const Index = props => (
           </a>
         </p>
         <p className="mv1">
-          and I also keep some music over
-          {' '}
+          {`and I also keep some music over `}
           <a href="/music" className="link blue dim no-underline">
             here
           </a>
           {'. '}
         </p>
         <p className="mv1">
-          you can follow me on twitter
-          {' '}
+          {`you can follow me on twitter `}
           <a
             target="_blank"
             href="https://twitter.com/1000machines"
@@ -82,8 +78,7 @@ const Index = props => (
         <div className="measure-narrow">
           <hr />
           <p className="mv1">
-            feel free to send me an
-            {' '}
+            {`feel free to send me an `}
             <a
               href="mailto:koper.andzrzej@gmail.com"
               className="link blue dim no-underline"
