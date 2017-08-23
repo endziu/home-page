@@ -11,7 +11,7 @@ const drawWaves = sound => {
       '-i',
       sound.sound_url,
       '-filter_complex',
-      'showwavespic=s=1024x120:colors=white',
+      'showwavespic=s=1024x120:colors=black',
       '-frames:v',
       '1',
       sound.waveform_url

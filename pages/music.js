@@ -38,6 +38,7 @@ export default class Music extends React.Component {
     this.playClick = this.playClick.bind(this)
     this.waveClick = this.waveClick.bind(this)
     this.updatePos = this.updatePos.bind(this)
+    this.onEnded = this.onEnded.bind(this)
   }
 
   componentWillMount() {
@@ -88,6 +89,13 @@ export default class Music extends React.Component {
     })
   }
 
+  onEnded() {
+    this.setState({
+      isPlaying: false,
+      percentPlayed: 0
+    })
+  }
+
   render() {
     const track = this.props.tracks[this.state.currentTrack]
     return (
@@ -98,6 +106,7 @@ export default class Music extends React.Component {
           preload={'metadata'}
           isPlaying={this.state.isPlaying}
           onTimeupdate={this.updatePos}
+          onEnded={this.onEnded}
         />
         <Display
           time={this.state.currentTime}

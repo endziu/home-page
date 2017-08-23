@@ -25,7 +25,7 @@ const GithubIcon = () => (
     viewBox="0 0 16 16"
     width="16"
     height="16"
-    fill="#ffffff"
+    fill="#000"
     fill-rule="evenodd"
     clip-rule="evenodd"
     stroke-linejoin="round"
@@ -44,7 +44,7 @@ const SoundcloudIcon = () => (
     viewBox="0 0 16 16"
     width="16"
     height="16"
-    fill="#ffffff"
+    fill="#000"
     fill-rule="evenodd"
     clip-rule="evenodd"
     stroke-linejoin="round"
@@ -63,7 +63,7 @@ const TwitterIcon = () => (
     viewBox="0 0 16 16"
     width="16"
     height="16"
-    fill="#ffffff"
+    fill="#000"
     fill-rule="evenodd"
     clip-rule="evenodd"
     stroke-linejoin="round"
@@ -78,7 +78,7 @@ const TwitterIcon = () => (
 
 const Index = props => (
   <Layout path={props.url.pathname}>
-    <div className="pl2 white mw8 center">
+    <div className="pl2 mw8 center">
       <header>
         <h2 className="f2 f1-m f-headline-l mv2 mv3-ns ml0 mh0">
           {`hello, I'm Andrzej`}

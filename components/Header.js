@@ -9,7 +9,7 @@ const Header = props => (
           className={
             props.path === '/'
               ? 'blue no-underline mr3'
-              : 'white hover-blue no-underline mr3'
+              : 'black-80 hover-blue no-underline mr3'
           }
         >
           endziu.xyz
@@ -19,8 +19,8 @@ const Header = props => (
         <a
           className={
             props.path === '/music'
-              ? 'green no-underline mr3'
-              : 'white hover-green no-underline mr3'
+              ? 'yellow no-underline mr3'
+              : 'black-80 hover-yellow no-underline mr3'
           }
         >
           music
@@ -30,8 +30,8 @@ const Header = props => (
         <a
           className={
             props.path === '/projects'
-              ? 'yellow no-underline mr3'
-              : 'white hover-yellow no-underline mr3'
+              ? 'red no-underline mr3'
+              : 'black-80 hover-red no-underline mr3'
           }
         >
           projects

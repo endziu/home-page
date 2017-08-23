@@ -14,8 +14,8 @@ const Title = ({ track, i, current }) => (
     <a
       className={
         parseInt(i) === parseInt(current)
-          ? 'green link underline-hover pointer f4'
-          : 'white link underline-hover hover-yellow pointer f4'
+          ? 'yellow link underline-hover pointer f4'
+          : 'black-80 link underline-hover hover-yellow pointer f4'
       }
     >
       {track.title}
@@ -45,7 +45,7 @@ const makeItem = (current, isPlaying, playClick) => (t, i, arr) => (
 )
 
 const SoundList = ({ tracks, playClick, current, isPlaying }) => (
-  <ul className="list ma2 pa0 white mw8 center">
+  <ul className="list ma2 pa0 mw8 center">
     {tracks.map(makeItem(current, isPlaying, playClick))}
   </ul>
 )
