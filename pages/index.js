@@ -13,7 +13,7 @@ const Line = ({ text, href, link, children }) => (
 )
 
 const Block = props => (
-  <div className="measure lh-copy">
+  <div className="measure lh-copy bg-white-80">
     <hr />
     {props.children}
   </div>

@@ -24,7 +24,11 @@ export default ({
 
     <Footer />
     <style jsx global>{`
-      html {background: #f1f1f1;}
+      html {
+        background: #f1f1f1;
+        background: url(/imgs/background.webp) no-repeat center center fixed;
+        background-size: cover;
+      }
     `}</style>
   </div>
 )
