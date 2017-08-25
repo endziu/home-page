@@ -26,11 +26,15 @@ export default ({
     <style jsx global>{`
       html {
         background: #f1f1f1;
-        background: url(/imgs/background.webp) no-repeat center center fixed;
+        background: url(https://images.unsplash.com/photo-1455532521709-d33f05731e3c?dpr=1&auto=format&fit=crop&w=1199&h=855&q=80&cs=tinysrgb&crop=) no-repeat center center fixed;
         background-size: cover;
       }
     `}</style>
   </div>
 )
+
+///imgs/background.webp
+
+//https://images.unsplash.com/photo-1455532521709-d33f05731e3c?dpr=1&auto=format&fit=crop&w=1199&h=855&q=80&cs=tinysrgb&crop=
 
 //#001b44

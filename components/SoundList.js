@@ -14,8 +14,8 @@ const Title = ({ track, i, current }) => (
     <a
       className={
         parseInt(i) === parseInt(current)
-          ? 'yellow link underline-hover pointer f4 bg-white-60'
-          : 'black-80 link underline-hover hover-yellow pointer f4 bg-white-60'
+          ? 'yellow link underline-hover pointer f4'
+          : 'black-80 link underline-hover hover-yellow pointer f4'
       }
     >
       {track.title}
