@@ -10,11 +10,6 @@ const webdev = [
     imgUrl: 'http://mrmrs.github.io/images/0002.jpg',
     name: 'canvas physics',
     link: 'https://endziu.xyz'
-  },
-  {
-    imgUrl: 'http://mrmrs.github.io/images/0003.jpg',
-    name: 'quorridor',
-    link: ''
   }
 ]
 
