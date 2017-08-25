@@ -91,7 +91,7 @@ const prod = [
     link: 'https://vimeo.com/185946610'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0004.jpg',
+    imgUrl: '/imgs/gra.jpg',
     name: 'gra w ciemno',
     link: 'https://www.atmgrupa.pl/produkcja/gra-w-ciemno/'
   }
