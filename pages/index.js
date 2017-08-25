@@ -84,12 +84,12 @@ const Index = props => (
           <Line text={`I support cryptocurrencies:`} />
           <Line
             text={`bitcoin: `}
-            href={`/imgs/btc-qr-code.png`}
+            href={`/imgs/btc-qr-code.jpg`}
             link={`1qa4xA4DXR26oPhXXAvy9ivByDYXkmhpU`}
           />
           <Line
             text={`ethereum: `}
-            href={`/imgs/eth-qr-code.png`}
+            href={`/imgs/eth-qr-code.jpg`}
             link={`0xc3adab50c47b3d9c3342d71202838ddb5f09a050`}
           />
         </div>

@@ -2,12 +2,12 @@ import Layout from '../components/Layout.js'
 
 const webdev = [
   {
-    imgUrl: 'http://mrmrs.github.io/images/0006.jpg',
+    imgUrl: '/imgs/mapa.jpg',
     name: 'dźwiekowa mapa',
     link: 'https://dzwiekowamapa.pl'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0002.jpg',
+    imgUrl: '/imgs/canvas.jpg',
     name: 'canvas physics',
     link: 'https://endziu.xyz'
   }
@@ -15,17 +15,17 @@ const webdev = [
 
 const rec = [
   {
-    imgUrl: 'http://mrmrs.github.io/images/0005.jpg',
+    imgUrl: '/imgs/mombe.jpg',
     name: 'mombe',
     link: 'https://mombe.bandcamp.com/album/momb-2'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0001.jpg',
+    imgUrl: '/imgs/statues.jpg',
     name: 'the jazz statues',
     link: 'https://thejazzstatues.bandcamp.com/album/the-jazz-statues-conquer'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0004.jpg',
+    imgUrl: '/imgs/alinga.jpg',
     name: 'sewa kafo',
     link: 'https://www.youtube.com/watch?v=S_WFWuoMEEk'
   }
@@ -51,42 +51,42 @@ const av = [
 
 const prod = [
   {
-    imgUrl: 'http://mrmrs.github.io/images/0005.jpg',
+    imgUrl: '/imgs/rzeznia.jpg',
     name: 'rzeźnia numer 1',
     link: 'http://www.filmpolski.pl/fp/index.php?film=1217848'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0001.jpg',
+    imgUrl: '/imgs/histeria.jpg',
     name: 'krótka histeria czasu',
     link: 'http://www.filmpolski.pl/fp/index.php?film=1216732'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0004.jpg',
+    imgUrl: '/imgs/krew.jpg',
     name: 'krew z nosa',
     link: 'http://www.filmpolski.pl/fp/index.php?film=1214406'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0005.jpg',
+    imgUrl: '/imgs/pokoj.jpg',
     name: 'pokój',
     link: 'http://www.filmpolski.pl/fp/index.php?film=4224943'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0001.jpg',
+    imgUrl: '/imgs/micro.jpg',
     name: 'micro situations',
     link: 'https://vimeo.com/85443642'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0004.jpg',
+    imgUrl: '/imgs/ucieczka.jpg',
     name: 'ucieczka ze szklanej kuli',
     link: 'https://www.youtube.com/watch?v=DgTGhln-rlM'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0004.jpg',
+    imgUrl: '/imgs/rys.jpg',
     name: 'ty i rys społeczny',
     link: 'https://vimeo.com/11533775'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0004.jpg',
+    imgUrl: '/imgs/arc.jpg',
     name: 'ArC2',
     link: 'https://vimeo.com/185946610'
   },
@@ -107,7 +107,7 @@ const Item = props => (
           }}
           className="db bg-center cover aspect-ratio--object"
         />
-        <h3 className="absolute bottom-0 link z-999 ma0 pa0 f6 black-80 bg-white-60">
+        <h3 className="absolute bottom-0 link z-999 ma0 pa0 f6 black-80 bg-white">
           {props.name}
         </h3>
       </div>
