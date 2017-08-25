@@ -99,7 +99,7 @@ const prod = [
 
 const Item = props => (
   <article className="fl w-25 w-20-m w-10-l pa2">
-    <a target="_blank" href={props.link}>
+    <a target={props.link && '_blank'} href={props.link}>
       <div className="aspect-ratio aspect-ratio--1x1 grow">
         <img
           style={{
@@ -117,7 +117,7 @@ const Item = props => (
 
 const Section = ({ type, items }) => (
   <section className="cf w-100 pa2-ns mw8 center">
-    <h1>{type}</h1>
+    <h1 className="f4 f3-ns pl2">{type}</h1>
     {items.map((item, i, arr) => (
       <Item key={i} imgUrl={item.imgUrl} name={item.name} link={item.link} />
     ))}
