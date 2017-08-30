@@ -31,17 +31,17 @@ const rec = [
 
 const av = [
   {
-    imgUrl: 'http://mrmrs.github.io/images/0006.jpg',
+    imgUrl: '/imgs/ceta.jpg',
     name: 'live @ceta',
     link: 'https://vimeo.com/123825272'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0005.jpg',
+    imgUrl: '/imgs/puzzle.jpg',
     name: 'live @Puzzle',
     link: 'https://www.youtube.com/watch?v=ZpCya0Pj47E'
   },
   {
-    imgUrl: 'http://mrmrs.github.io/images/0007.jpg',
+    imgUrl: '/imgs/login.jpg',
     name: 'live @Login',
     link: ''
   }
@@ -49,24 +49,9 @@ const av = [
 
 const prod = [
   {
-    imgUrl: '/imgs/rzeznia.jpg',
-    name: 'rzeźnia numer 1',
-    link: 'http://www.filmpolski.pl/fp/index.php?film=1217848'
-  },
-  {
-    imgUrl: '/imgs/histeria.jpg',
-    name: 'krótka histeria czasu',
-    link: 'http://www.filmpolski.pl/fp/index.php?film=1216732'
-  },
-  {
-    imgUrl: '/imgs/krew.jpg',
-    name: 'krew z nosa',
-    link: 'http://www.filmpolski.pl/fp/index.php?film=1214406'
-  },
-  {
-    imgUrl: '/imgs/pokoj.jpg',
-    name: 'pokój',
-    link: 'http://www.filmpolski.pl/fp/index.php?film=4224943'
+    imgUrl: '/imgs/arc.jpg',
+    name: 'ArC2',
+    link: 'https://vimeo.com/185946610'
   },
   {
     imgUrl: '/imgs/micro.jpg',
@@ -84,14 +69,29 @@ const prod = [
     link: 'https://vimeo.com/11533775'
   },
   {
-    imgUrl: '/imgs/arc.jpg',
-    name: 'ArC2',
-    link: 'https://vimeo.com/185946610'
+    imgUrl: '/imgs/pokoj.jpg',
+    name: 'pokój',
+    link: 'http://www.filmpolski.pl/fp/index.php?film=4224943'
+  },
+  {
+    imgUrl: '/imgs/rzeznia.jpg',
+    name: 'rzeźnia numer 1',
+    link: 'http://www.filmpolski.pl/fp/index.php?film=1217848'
+  },
+  {
+    imgUrl: '/imgs/histeria.jpg',
+    name: 'krótka histeria czasu',
+    link: 'http://www.filmpolski.pl/fp/index.php?film=1216732'
   },
   {
     imgUrl: '/imgs/gra.jpg',
     name: 'gra w ciemno',
     link: 'https://www.atmgrupa.pl/produkcja/gra-w-ciemno/'
+  },
+  {
+    imgUrl: '/imgs/krew.jpg',
+    name: 'krew z nosa',
+    link: 'http://www.filmpolski.pl/fp/index.php?film=1214406'
   }
 ]
 

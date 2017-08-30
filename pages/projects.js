@@ -6,9 +6,16 @@ const Item = props => (
     <a target={props.link && '_blank'} href={props.link}>
       <div className="aspect-ratio aspect-ratio--1x1 grow">
         <img
-          style={{
-            backgroundImage: `url(${props.imgUrl})`
-          }}
+          style={
+            props.link
+              ? {
+                  backgroundImage: `url(${props.imgUrl})`
+                }
+              : {
+                  backgroundImage: `url(${props.imgUrl})`,
+                  cursor: 'not-allowed'
+                }
+          }
           className="db bg-center cover aspect-ratio--object"
         />
         <h3 className="absolute bottom-0 link z-999 ma0 pa0 f6 black-80 bg-white">
