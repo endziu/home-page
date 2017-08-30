@@ -102,7 +102,6 @@ const Index = props => (
           link={`email`}
         />
       </Block>
-
     </div>
   </Layout>
 )
