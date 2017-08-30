@@ -98,7 +98,7 @@ const Index = props => (
       <Block>
         <Line
           text={`feel free to send me an `}
-          href={`mailto:koper.andzrzej@gmail.com`}
+          href={`mailto:koper.andrzej@gmail.com`}
           link={`email`}
         />
       </Block>
