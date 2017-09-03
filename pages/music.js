@@ -100,6 +100,7 @@ export default class Music extends React.Component {
     const track = this.props.tracks[this.state.currentTrack]
     return (
       <Layout path={this.props.url.pathname}>
+        <div>Loading data from {process.env.BACKEND_URL}</div>
         <Player
           ref="player"
           source={`${track.sound_url.substr(8)}`}
