@@ -18,7 +18,6 @@ const findID = (permalink, list) => {
 export default class Music extends React.Component {
   static async getInitialProps(context) {
     const { title } = context.query
-    console.log(`${process.env.BACKEND_URL}/api`)
     const res = await fetch(`${process.env.BACKEND_URL}/api`)
     const data = await res.json()
     const permalink = title || '110untunednobassmix'

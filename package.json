@@ -7,7 +7,7 @@
     "dev": "node server.js",
     "build": "next build",
     "export": "next export",
-    "start": "export NODE_ENV=production && node server.js"
+    "start": "SET NODE_ENV=production && node server.js"
   },
   "keywords": [],
   "author": "",
