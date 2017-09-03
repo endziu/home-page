@@ -17,7 +17,7 @@ const findID = (permalink, list) => {
 
 export default class Music extends React.Component {
   static async getInitialProps(context) {
-    console.log(`${process.env.BACKEND_URL}/api`)
+    //console.log(`${process.env.BACKEND_URL}/api`)
     const { title } = context.query
     const res = await fetch(`${process.env.BACKEND_URL}/api`)
     const data = await res.json()
@@ -43,7 +43,7 @@ export default class Music extends React.Component {
   }
 
   componentWillMount() {
-    console.log(process.env.BACKEND_URL)
+    //console.log(process.env.BACKEND_URL)
     const id = findID(this.props.permalink, this.props.tracks)
     this.setState({
       currentTrack: id
