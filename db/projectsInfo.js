@@ -7,7 +7,7 @@ const webdev = [
   {
     imgUrl: '/imgs/canvas.jpg',
     name: 'canvas physics',
-    link: 'https://endziu.xyz'
+    link: 'https://endziu.xyz/canvas'
   }
 ]
 
