@@ -1,7 +1,6 @@
 const express = require('express')
 const cors = require('cors')
 const next = require('next')
-const morgan = require('morgan')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
