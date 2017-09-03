@@ -17,7 +17,6 @@ const findID = (permalink, list) => {
 
 export default class Music extends React.Component {
   static async getInitialProps(context) {
-    console.log(`${process.env.BACKEND_URL}/api`)
     const { title } = context.query
     const res = await fetch(`${process.env.BACKEND_URL}/api`)
     const data = await res.json()
@@ -101,7 +100,6 @@ export default class Music extends React.Component {
     const track = this.props.tracks[this.state.currentTrack]
     return (
       <Layout path={this.props.url.pathname}>
-        <div>Loading data from {process.env.BACKEND_URL}</div>
         <Player
           ref="player"
           source={`${track.sound_url.substr(8)}`}
