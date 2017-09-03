@@ -17,6 +17,7 @@ const findID = (permalink, list) => {
 
 export default class Music extends React.Component {
   static async getInitialProps(context) {
+    console.log(`${process.env.BACKEND_URL}/api`)
     const { title } = context.query
     const res = await fetch(`${process.env.BACKEND_URL}/api`)
     const data = await res.json()
