@@ -17,7 +17,6 @@ app
     server.use(cors())
 
     server.use(express.static('public'))
-    server.use(morgan('tiny'))
     server.get(['/api'], (req, res) => {
       res.send(tracks)
     })
