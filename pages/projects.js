@@ -3,7 +3,10 @@ import { webdev, rec, prod, av } from '../db/projectsInfo.js'
 
 const Item = props => (
   <article className="fl w-25 w-20-m w-10-l pa2">
-    <a target={props.link && '_blank'} href={props.link}>
+    <a
+      target={props.link && !props.link.startsWith('/') ? '_blank' : ''}
+      href={props.link}
+    >
       <div className="aspect-ratio aspect-ratio--1x1 grow">
         <img
           style={

@@ -4,7 +4,11 @@ import SvgLink from '../components/SvgLink.js'
 const Line = ({ text, href, link, children }) => (
   <p className="mv1 f6 f5-ns">
     {text}
-    <a target="_blank" href={href} className="link blue dim no-undeline">
+    <a
+      target={href && href.startsWith('/') ? '' : '_blank'}
+      href={href}
+      className="link blue dim no-undeline"
+    >
       {link}
       {` `}
       {children}
