@@ -85,7 +85,7 @@ const Index = props => (
             <SoundcloudIcon />
           </Line>
           <Line
-            text={`and I also keep some music over `}
+            text={`I also keep some music over `}
             href={`/music`}
             link={`here`}
           />
