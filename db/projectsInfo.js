@@ -33,7 +33,7 @@ const av = [
   {
     imgUrl: '/imgs/ceta.jpg',
     name: 'live @ceta',
-    link: 'https://vimeo.com/123825272'
+    link: 'https://www.youtube.com/watch?v=g2H8L6UeEh8'
   },
   {
     imgUrl: '/imgs/puzzle.jpg',
