@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "homepage",
   "main": "server.js",
+  "bin": ".next",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
