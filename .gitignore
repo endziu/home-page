@@ -1,4 +1,5 @@
 .next
 node_modules
-*.log
 public/sounds
+.vscode
+*.log
