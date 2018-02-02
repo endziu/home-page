@@ -16,13 +16,19 @@ app
     server.use(cors())
 
     server.use(express.static('public'))
-    server.get(['/api'], (req, res) => {
+
+    server.get('/api', (req, res) => {
       res.send(tracks)
     })
 
     server.get('/music/:title', (req, res) => {
       const queryParams = { title: req.params.title }
       app.render(req, res, '/music', queryParams)
+    })
+
+    server.get('/player/:title', (req, res) => {
+      const queryParams = { title: req.params.title }
+      app.render(req, res, '/player', queryParams)
     })
 
     server.get('*', (req, res) => {

@@ -1,5 +1,4 @@
 import Layout from '../components/Layout.js'
-import SvgLink from '../components/SvgLink.js'
 
 const Line = ({ text, href, link, children }) => (
   <p className="mv1 f6 f5-ns">
