@@ -9,10 +9,7 @@ export default ({ path, children, title = 'endziu.xyz' }) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"
-      />
+      <link rel="stylesheet" href="/css/tachyons.min.css" />
     </Head>
     <Header path={path} />
 
