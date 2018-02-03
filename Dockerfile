@@ -1,8 +1,6 @@
 FROM node:latest AS build
 
 WORKDIR /app
-ENV NODE_ENV=production
-
 COPY package.json .
 COPY package-lock.json .
 RUN npm install
