@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "node server.js",
+    "start": "export NODE_ENV=production && node server.js",
     "prepackage": "npm run build",
     "package": "pkg -t node9-alpine-x64 --output app package.json"
   },
