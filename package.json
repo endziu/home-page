@@ -2,40 +2,24 @@
   "name": "home-page",
   "version": "1.0.1",
   "description": "homepage",
-  "main": "server.js",
-  "bin": "server.js",
+  "author": "<koper.andrzej@gmail.com>",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "export NODE_ENV=production && node server.js",
-    "prepackage": "npm run build",
-    "package": "pkg -t node9-alpine-x64 --output app package.json"
+    "start": "export NODE_ENV=production && node server.js"
   },
   "keywords": [
     "endziu.xyz",
     "homepage"
   ],
-  "author": "<koper.andrzej@gmail.com>",
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^4.2.3",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
-  },
-  "devDependencies": {
+    "react-dom": "^16.2.0",
     "babel-plugin-transform-define": "^1.3.0",
     "pkg": "^4.3.0"
-  },
-  "pkg": {
-    "assets": [
-      ".next",
-      "pages",
-      "public"
-    ],
-    "scripts": [
-      ".next/dist/**/*.js"
-    ]
   }
 }
