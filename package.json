@@ -1,6 +1,6 @@
 {
   "name": "home-page",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "homepage",
   "author": "<koper.andrzej@gmail.com>",
   "scripts": {
@@ -16,10 +16,9 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "isomorphic-unfetch": "^2.0.0",
-    "next": "^4.2.3",
+    "next": "^6.0.3",
+    "pkg": "^4.3.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "babel-plugin-transform-define": "^1.3.0",
-    "pkg": "^4.3.0"
+    "react-dom": "^16.2.0"
   }
 }

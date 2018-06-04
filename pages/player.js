@@ -1,6 +1,10 @@
 import fetch from 'isomorphic-unfetch'
 import Link from 'next/link'
 
+import getConfig from 'next/config'
+// Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
+const {serverRuntimeConfig, publicRuntimeConfig} = getConfig()
+
 import Layout from '../components/Layout.js'
 import Player from '../components/Player.js'
 import Display from '../components/Display.js'
@@ -17,9 +21,9 @@ const findID = (permalink, list) => {
 
 export default class Music extends React.Component {
   static async getInitialProps(context) {
-    //console.log(`${process.env.BACKEND_URL}/api`)
+    //console.log(`${publicRuntimeConfig.backEndUrl}/api`)
     const { title } = context.query
-    const res = await fetch(`${process.env.BACKEND_URL}/api`)
+    const res = await fetch(`${publicRuntimeConfig.backEndUrl}/api`)
     const data = await res.json()
     const permalink = title || '110untunednobassmix'
     return {
@@ -84,7 +88,7 @@ export default class Music extends React.Component {
 
     const seconds = date.setSeconds(currentTime)
     const time = date.toISOString().substr(14, 5)
-
+    
     this.setState({
       percentPlayed: (currentTime / duration).toFixed(3) * 100 || 0,
       currentTime: time
