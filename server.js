@@ -15,7 +15,7 @@ app
 
     server.use(cors())
 
-    server.use(express.static('public'))
+    server.use(express.static('static'))
 
     server.get('/api', (req, res) => {
       res.send(tracks)
