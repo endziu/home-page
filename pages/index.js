@@ -87,7 +87,9 @@ const Index = props => (
             text={`I also keep some music at `}
             href={`https://ujomusic.com/portal/musicgroup/26`}
             link={`Ujo`}
-          />
+          >
+            <EthIcon />
+          </Line>
           <Line
             text={`you can follow me on twitter `}
             href={`https://twitter.com/1000machines`}
