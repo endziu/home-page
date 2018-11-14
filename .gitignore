@@ -1,6 +1,6 @@
 .next
 .vscode
 node_modules
+static/sounds/*
 desktop.ini
-static/sounds/
 .DS_store
