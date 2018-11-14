@@ -1,4 +1,5 @@
-import Layout from "../components/Layout.js"
+import { withRouter } from "next/router"
+import Layout from "../comps/Layout.js"
 
 const Line = ({ text, href, link, children }) => (
   <p className="mv1 f6 f5-ns">
@@ -57,8 +58,8 @@ const EthIcon = () => (
 )
 
 const Index = props => (
-  <Layout path={props.url.pathname}>
-    <div className="pl2 mw8 center">
+  <Layout path={props.router.pathname}>
+    <div className="pl2">
       <header className="mv4">
         <h2 className="f2 f1-m f-headline-l ma0">
           {`hello, I'm Andrzej`}
@@ -140,4 +141,4 @@ const Index = props => (
   </Layout>
 )
 
-export default Index
+export default withRouter(Index)

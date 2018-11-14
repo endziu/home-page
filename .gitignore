@@ -1,5 +1,6 @@
 .next
-node_modules
-static/snds
 .vscode
-*.log
+node_modules
+desktop.ini
+static/sounds
+.DS_store

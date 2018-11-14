@@ -1,23 +1,22 @@
 {
-  "name": "home-page",
-  "version": "1.0.2",
-  "description": "homepage",
-  "author": "<koper.andrzej@gmail.com>",
+  "name": "audio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "export NODE_ENV=production && node server.js"
+    "start": "NODE_ENV=production node server.js"
   },
-  "keywords": [
-    "endziu.xyz",
-    "homepage"
-  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "isomorphic-unfetch": "^2.0.0",
     "next": "^7.0.2",
     "react": "^16.6.1",
-    "react-dom": "^16.6.1"
+    "react-dom": "^16.6.1",
+    "styled-components": "^4.0.3"
   }
 }

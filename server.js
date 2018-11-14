@@ -1,12 +1,10 @@
-const express = require('express')
-const cors = require('cors')
-const next = require('next')
+const express = require("express")
+const cors = require("cors")
+const next = require("next")
 
-const dev = process.env.NODE_ENV !== 'production'
+const dev = process.env.NODE_ENV !== "production"
 const app = next({ dev })
 const handle = app.getRequestHandler()
-
-const tracks = require('./db/sounds.json')
 
 app
   .prepare()
@@ -14,30 +12,20 @@ app
     const server = express()
 
     server.use(cors())
+    server.use(express.static("static"))
 
-    server.use(express.static('static'))
-
-    server.get('/api', (req, res) => {
-      res.send(tracks)
+    server.get("/music/:ID", (req, res) => {
+      const queryParams = { ID: req.params.ID }
+      app.render(req, res, "/music", queryParams)
     })
 
-    server.get('/music/:title', (req, res) => {
-      const queryParams = { title: req.params.title }
-      app.render(req, res, '/music', queryParams)
-    })
-
-    server.get('/player/:title', (req, res) => {
-      const queryParams = { title: req.params.title }
-      app.render(req, res, '/player', queryParams)
-    })
-
-    server.get('*', (req, res) => {
+    server.get("*", (req, res) => {
       return handle(req, res)
     })
 
-    server.listen(16662, err => {
+    server.listen(3000, err => {
       if (err) throw err
-      console.log(`> Ready on port: 16662`)
+      console.log(`> Ready on port: 3000`)
     })
   })
   .catch(ex => {
