@@ -1,14 +1,12 @@
-import fetch from 'isomorphic-unfetch'
-import Link from 'next/link'
+import fetch from "isomorphic-unfetch"
 
-import getConfig from 'next/config'
-// Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
-const {serverRuntimeConfig, publicRuntimeConfig} = getConfig()
+import getConfig from "next/config"
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
 
-import Layout from '../components/Layout.js'
-import Player from '../components/Player.js'
-import Display from '../components/Display.js'
-import SoundList from '../components/SoundList.js'
+import Layout from "../components/Layout.js"
+import Player from "../components/Player.js"
+import Display from "../components/Display.js"
+import SoundList from "../components/SoundList.js"
 
 const findID = (permalink, list) => {
   const sound = list.filter(el => el.permalink === permalink)[0]
@@ -21,11 +19,10 @@ const findID = (permalink, list) => {
 
 export default class Music extends React.Component {
   static async getInitialProps(context) {
-    //console.log(`${publicRuntimeConfig.backEndUrl}/api`)
     const { title } = context.query
     const res = await fetch(`${publicRuntimeConfig.backEndUrl}/api`)
     const data = await res.json()
-    const permalink = title || '110untunednobassmix'
+    const permalink = title || "110untunednobassmix"
     return {
       tracks: data,
       permalink: permalink
@@ -36,7 +33,7 @@ export default class Music extends React.Component {
     super()
     this.state = {
       currentTrack: 0,
-      currentTime: '0:00',
+      currentTime: "0:00",
       isPlaying: false,
       percentPlayed: 0
     }
@@ -47,7 +44,6 @@ export default class Music extends React.Component {
   }
 
   componentWillMount() {
-    //console.log(process.env.BACKEND_URL)
     const id = findID(this.props.permalink, this.props.tracks)
     this.setState({
       currentTrack: id
@@ -58,9 +54,7 @@ export default class Music extends React.Component {
     const id = findID(props.permalink, props.tracks)
     this.setState(prevState => ({
       currentTrack: id,
-      isPlaying: prevState.isPlaying
-        ? id === prevState.currentTrack ? true : false
-        : false
+      isPlaying: id === prevState.currentTrack
     }))
   }
 
@@ -71,7 +65,7 @@ export default class Music extends React.Component {
   }
 
   waveClick(e) {
-    const rect = document.getElementById('wave').getBoundingClientRect()
+    const rect = document.getElementById("wave").getBoundingClientRect()
     const ratio = (e.clientX - rect.left) / rect.width
     this.refs.player.setPlaybackPercent(ratio)
     this.refs.player.audio.play()
@@ -109,7 +103,7 @@ export default class Music extends React.Component {
         <Player
           ref="player"
           source={`${track.sound_url.substr(8)}`}
-          preload={'metadata'}
+          preload={"metadata"}
           isPlaying={this.state.isPlaying}
           onTimeupdate={this.updatePos}
           onEnded={this.onEnded}

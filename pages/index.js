@@ -1,10 +1,10 @@
-import Layout from '../components/Layout.js'
+import Layout from "../components/Layout.js"
 
 const Line = ({ text, href, link, children }) => (
   <p className="mv1 f6 f5-ns">
     {text}
     <a
-      target={href && href.startsWith('/') ? '' : '_blank'}
+      target={href && href.startsWith("/") ? "" : "_blank"}
       href={href}
       className="link blue dim no-undeline"
     >
@@ -70,7 +70,7 @@ const Index = props => (
       <Block>
         <div>
           <Line
-            text={`code I write is open source on `}
+            text={`my code is open source on `}
             href={`https://github.com/endziu`}
             link={`github`}
           >
@@ -84,16 +84,25 @@ const Index = props => (
             <SoundcloudIcon />
           </Line>
           <Line
-            text={`I also keep some music over `}
-            href={`/music`}
-            link={`here`}
-          />
+            text={`I also keep some music at `}
+            href={`https://ujomusic.com/portal/musicgroup/26`}
+            link={`Ujo`}
+          >
+            <EthIcon />
+          </Line>
           <Line
             text={`you can follow me on twitter `}
             href={`https://twitter.com/1000machines`}
             link={`@1000machines`}
           >
             <TwitterIcon />
+          </Line>
+          <Line
+            text={`or peepeth `}
+            href={`https://peepeth.com/endziu`}
+            link={`@endziu`}
+          >
+            <EthIcon />
           </Line>
         </div>
       </Block>
