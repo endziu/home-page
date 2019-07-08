@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <link rel="stylesheet" href="/static/tachyons.min.css" />
           <meta

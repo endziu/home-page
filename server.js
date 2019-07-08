@@ -1,6 +1,7 @@
 const express = require("express")
 const cors = require("cors")
 const next = require("next")
+const compression = require('compression') 
 
 const dev = process.env.NODE_ENV !== "production"
 const app = next({ dev })
@@ -11,6 +12,7 @@ app
   .then(() => {
     const server = express()
 
+    server.use(compression())
     server.use(cors())
     server.use(express.static("static"))
 
