@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta name="Description" content="Andrzej Koper's home-page." />
           {this.props.styleTags}
         </Head>
         <body className="sans-serif black-80 pa2 mw8 center ph3-m ph4-l vh-100">
