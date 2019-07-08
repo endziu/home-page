@@ -5,9 +5,10 @@ const Line = ({ text, href, link, children }) => (
   <p className="mv1 f6 f5-ns">
     {text}
     <a
-      target={href && href.startsWith("/") ? "" : "_blank"}
+      rel="noreferrer"
       href={href}
-      className="link blue dim no-undeline"
+      target={href && href.startsWith("/") ? "" : "_blank"}
+      className="link dark-blue dim"
     >
       {link}
       {` `}
