@@ -115,7 +115,7 @@ const Index = props => (
           {`Bitcoin: `}
           <a
             href="/imgs/btc-qr-code.png"
-            title="bc1q2470npdlz9nsquj8slymz6ettdnthe2cdwdjqa"
+            title="bc1q7qd2uz4q4t9j7mmfkxqr9je9hc3tedhsfsdwr6"
           >
             <BitcoinIcon />
           </a>
