@@ -14,7 +14,7 @@ app
 
     server.use(compression())
     server.use(cors())
-    server.use(express.static('public'))
+    server.use(express.static('./public'))
 
     server.get('/music/:ID', (req, res) => {
       const queryParams = { ID: req.params.ID }

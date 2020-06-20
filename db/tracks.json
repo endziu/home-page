@@ -2,120 +2,120 @@
   {
     "title": "110untunednobassmix",
     "permalink": "110untunednobassmix",
-    "waveform_url": "./static/waves/110untunednobassmix.png",
-    "sound_url": "./static/sounds/110untunednobassmix.mp3",
+    "waveform_url": "./waves/110untunednobassmix.png",
+    "sound_url": "./sounds/110untunednobassmix.mp3",
     "id": "0"
   },
   {
     "title": "a melody",
     "permalink": "a-melody",
-    "waveform_url": "./static/waves/a-melody.png",
-    "sound_url": "./static/sounds/a-melody.mp3",
+    "waveform_url": "./waves/a-melody.png",
+    "sound_url": "./sounds/a-melody.mp3",
     "id": "1"
   },
   {
     "title": "binary blob",
     "permalink": "binary-blob",
-    "waveform_url": "./static/waves/binary-blob.png",
-    "sound_url": "./static/sounds/binary-blob.mp3",
+    "waveform_url": "./waves/binary-blob.png",
+    "sound_url": "./sounds/binary-blob.mp3",
     "id": "2"
   },
   {
     "title": "efix",
     "permalink": "efix",
-    "waveform_url": "./static/waves/efix.png",
-    "sound_url": "./static/sounds/efix.mp3",
+    "waveform_url": "./waves/efix.png",
+    "sound_url": "./sounds/efix.mp3",
     "id": "3"
   },
   {
     "title": "emisions",
     "permalink": "Emisions",
-    "waveform_url": "./static/waves/Emisions.png",
-    "sound_url": "./static/sounds/Emisions.mp3",
+    "waveform_url": "./waves/Emisions.png",
+    "sound_url": "./sounds/Emisions.mp3",
     "id": "4"
   },
   {
     "title": "kliks radio",
     "permalink": "kliks-radio",
-    "waveform_url": "./static/waves/kliks-radio.png",
-    "sound_url": "./static/sounds/kliks-radio.mp3",
+    "waveform_url": "./waves/kliks-radio.png",
+    "sound_url": "./sounds/kliks-radio.mp3",
     "id": "5"
   },
   {
     "title": "ganges",
     "permalink": "Ganges",
-    "waveform_url": "./static/waves/Ganges.png",
-    "sound_url": "./static/sounds/Ganges.mp3",
+    "waveform_url": "./waves/Ganges.png",
+    "sound_url": "./sounds/Ganges.mp3",
     "id": "6"
   },
   {
     "title": "lengths",
     "permalink": "lengths",
-    "waveform_url": "./static/waves/lengths.png",
-    "sound_url": "./static/sounds/lengths.mp3",
+    "waveform_url": "./waves/lengths.png",
+    "sound_url": "./sounds/lengths.mp3",
     "id": "7"
   },
   {
     "title": "micro situations",
     "permalink": "micro-situations",
-    "waveform_url": "./static/waves/micro-situations.png",
-    "sound_url": "./static/sounds/micro-situations.mp3",
+    "waveform_url": "./waves/micro-situations.png",
+    "sound_url": "./sounds/micro-situations.mp3",
     "id": "8"
   },
   {
     "title": "plugged in for a while",
     "permalink": "Plugged-in-for-a-while",
-    "waveform_url": "./static/waves/Plugged-in-for-a-while.png",
-    "sound_url": "./static/sounds/Plugged-in-for-a-while.mp3",
+    "waveform_url": "./waves/Plugged-in-for-a-while.png",
+    "sound_url": "./sounds/Plugged-in-for-a-while.mp3",
     "id": "9"
   },
   {
     "title": "prep2",
     "permalink": "prep2",
-    "waveform_url": "./static/waves/prep2.png",
-    "sound_url": "./static/sounds/prep2.mp3",
+    "waveform_url": "./waves/prep2.png",
+    "sound_url": "./sounds/prep2.mp3",
     "id": "10"
   },
   {
     "title": "pół kawałka",
     "permalink": "Pół-Kawałka",
-    "waveform_url": "./static/waves/Pół-Kawałka.png",
-    "sound_url": "./static/sounds/Pół-Kawałka.mp3",
+    "waveform_url": "./waves/Pół-Kawałka.png",
+    "sound_url": "./sounds/Pół-Kawałka.mp3",
     "id": "11"
   },
   {
     "title": "scenario",
     "permalink": "scenario",
-    "waveform_url": "./static/waves/scenario.png",
-    "sound_url": "./static/sounds/scenario.mp3",
+    "waveform_url": "./waves/scenario.png",
+    "sound_url": "./sounds/scenario.mp3",
     "id": "12"
   },
   {
     "title": "shtokha zen",
     "permalink": "Shtokha-Zen",
-    "waveform_url": "./static/waves/Shtokha-Zen.png",
-    "sound_url": "./static/sounds/Shtokha-Zen.mp3",
+    "waveform_url": "./waves/Shtokha-Zen.png",
+    "sound_url": "./sounds/Shtokha-Zen.mp3",
     "id": "13"
   },
   {
     "title": "tapes",
     "permalink": "tapes",
-    "waveform_url": "./static/waves/tapes.png",
-    "sound_url": "./static/sounds/tapes.mp3",
+    "waveform_url": "./waves/tapes.png",
+    "sound_url": "./sounds/tapes.mp3",
     "id": "14"
   },
   {
     "title": "trigger",
     "permalink": "trigger",
-    "waveform_url": "./static/waves/trigger.png",
-    "sound_url": "./static/sounds/trigger.mp3",
+    "waveform_url": "./waves/trigger.png",
+    "sound_url": "./sounds/trigger.mp3",
     "id": "15"
   },
   {
     "title": "untuned garden",
     "permalink": "untuned-garden",
-    "waveform_url": "./static/waves/untuned-garden.png",
-    "sound_url": "./static/sounds/untuned-garden.mp3",
+    "waveform_url": "./waves/untuned-garden.png",
+    "sound_url": "./sounds/untuned-garden.mp3",
     "id": "16"
   }
 ]

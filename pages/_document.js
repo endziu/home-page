@@ -1,11 +1,10 @@
-import Document, { Head, Main, NextScript } from "next/document"
-import { ServerStyleSheet } from "styled-components"
+import Document, { Head, Main, NextScript } from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
-    const page = renderPage(App => props =>
-      sheet.collectStyles(<App {...props} />))
+    const page = renderPage((App) => (props) => sheet.collectStyles(<App {...props} />))
     const styleTags = sheet.getStyleElement()
     return { ...page, styleTags }
   }
@@ -14,11 +13,8 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <link rel="stylesheet" href="/static/tachyons.min.css" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
+          <link rel="stylesheet" href="/tachyons.min.css" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="Description" content="Andrzej Koper's home-page." />
           {this.props.styleTags}
         </Head>
