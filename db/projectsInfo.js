@@ -54,6 +54,16 @@ const av = [
 
 const prod = [
   {
+    imgUrl: '/imgs/willmann.jpg',
+    name: 'Pawilon Czterech Kopuł - Willmann Opus Magnum',
+    link: 'https://www.youtube.com/watch?v=TkIz9Ez7FP8',
+  },
+  {
+    imgUrl: '/imgs/p4k.jpg',
+    name: 'Pawilon Czterech Kopuł - wystawa multimedialna',
+    link: 'https://www.youtube.com/watch?v=Q8-I5aMebRk',
+  },
+  {
     imgUrl: '/imgs/arc.jpg',
     name: 'ArC2',
     link: 'https://vimeo.com/185946610',
