@@ -1,15 +1,10 @@
-import { withRouter } from "next/router"
-import Layout from "../comps/Layout.js"
+import { withRouter } from 'next/router'
+import Layout from '../comps/Layout.js'
 
 const Line = ({ text, href, link, children }) => (
   <p className="mv1 f6 f5-ns">
     {text}
-    <a
-      rel="noreferrer"
-      href={href}
-      target={href && href.startsWith("/") ? "" : "_blank"}
-      className="link dark-blue dim"
-    >
+    <a rel="noreferrer" href={href} target={href && href.startsWith('/') ? '' : '_blank'} className="link dark-blue dim">
       {link}
       {` `}
       {children}
@@ -17,7 +12,7 @@ const Line = ({ text, href, link, children }) => (
   </p>
 )
 
-const Block = props => (
+const Block = (props) => (
   <div className="measure lh-copy">
     <hr />
     {props.children}
@@ -58,52 +53,28 @@ const EthIcon = () => (
   </svg>
 )
 
-const Index = props => (
+const Index = (props) => (
   <Layout path={props.router.pathname}>
     <div className="pl2">
       <header className="mv4">
-        <h2 className="f2 f1-m f-headline-l ma0">
-          {`hello, I'm Andrzej`}
-        </h2>
-        <h2 className="f5 f4-ns ma0">
-          {`I make music, sounds & JavaScript.`}
-        </h2>
+        <h2 className="f2 f1-m f-headline-l ma0">{`hello, I'm Andrzej`}</h2>
+        <h2 className="f5 f4-ns ma0">{`I make music, sounds & JavaScript.`}</h2>
       </header>
       <Block>
         <div>
-          <Line
-            text={`my code is open source on `}
-            href={`https://github.com/endziu`}
-            link={`github`}
-          >
+          <Line text={`my code is open source on `} href={`https://github.com/endziu`} link={`github`}>
             <GithubIcon />
           </Line>
-          <Line
-            text={`I post music online as `}
-            href={`https://soundcloud.com/abstract-machines`}
-            link={`@abstract-machines`}
-          >
+          <Line text={`I post music online as `} href={`https://soundcloud.com/abstract-machines`} link={`@abstract-machines`}>
             <SoundcloudIcon />
           </Line>
-          <Line
-            text={`I also keep some music at `}
-            href={`https://ujomusic.com/portal/musicgroup/26`}
-            link={`Ujo`}
-          >
+          <Line text={`I also keep some music at `} href={`https://ujomusic.com/portal/musicgroup/26`} link={`Ujo`}>
             <EthIcon />
           </Line>
-          <Line
-            text={`you can follow me on twitter `}
-            href={`https://twitter.com/1000machines`}
-            link={`@1000machines`}
-          >
+          <Line text={`you can follow me on twitter `} href={`https://twitter.com/1000machines`} link={`@1000machines`}>
             <TwitterIcon />
           </Line>
-          <Line
-            text={`or peepeth `}
-            href={`https://peepeth.com/endziu`}
-            link={`@endziu`}
-          >
+          <Line text={`or peepeth `} href={`https://peepeth.com/endziu`} link={`@endziu`}>
             <EthIcon />
           </Line>
         </div>
@@ -113,29 +84,18 @@ const Index = props => (
         <div>
           <Line text={`I accept and support cryptocurrencies:`} />
           {`Bitcoin: `}
-          <a
-            href="/imgs/btc-qr-code.png"
-            title="bc1q7qd2uz4q4t9j7mmfkxqr9je9hc3tedhsfsdwr6"
-          >
+          <a href="/imgs/btc-qr-code.png" title="bc1q7qd2uz4q4t9j7mmfkxqr9je9hc3tedhsfsdwr6">
             <BitcoinIcon />
           </a>
           {` & Ethereum: `}
-          <a
-            href="/imgs/eth-qr-code.png"
-            title="0x23c1D8550966bF6A1FB04fCE5dee74C8dD9Eab33"
-          >
+          <a href="/imgs/eth-qr-code.png" title="0x69323BD279f2Ed51BFfE88Ab8F25A46fC53562bB">
             <EthIcon />
           </a>
-
         </div>
       </Block>
 
       <Block>
-        <Line
-          text={`feel free to send me an `}
-          href={`mailto:koper.andrzej@gmail.com`}
-          link={`email`}
-        >
+        <Line text={`feel free to send me an `} href={`mailto:koper.andrzej@gmail.com`} link={`email`}>
           <MailIcon />
         </Line>
       </Block>
