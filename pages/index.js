@@ -68,14 +68,8 @@ const Index = (props) => (
           <Line text={`I post music online as `} href={`https://soundcloud.com/abstract-machines`} link={`@abstract-machines`}>
             <SoundcloudIcon />
           </Line>
-          <Line text={`I also keep some music at `} href={`https://ujomusic.com/portal/musicgroup/26`} link={`Ujo`}>
-            <EthIcon />
-          </Line>
           <Line text={`you can follow me on twitter `} href={`https://twitter.com/1000machines`} link={`@1000machines`}>
             <TwitterIcon />
-          </Line>
-          <Line text={`or peepeth `} href={`https://peepeth.com/endziu`} link={`@endziu`}>
-            <EthIcon />
           </Line>
         </div>
       </Block>
