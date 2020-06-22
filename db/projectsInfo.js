@@ -64,6 +64,16 @@ const prod = [
     link: 'https://www.youtube.com/watch?v=Q8-I5aMebRk',
   },
   {
+    imgUrl: '/imgs/3m-history.jpg',
+    name: 'History of 3M Poland',
+    link: 'https://vimeo.com/389861437',
+  },
+  {
+    imgUrl: '/imgs/3m-mapping.jpg',
+    name: '3M mapping',
+    link: 'https://vimeo.com/389861293',
+  },
+  {
     imgUrl: '/imgs/arc.jpg',
     name: 'ArC2',
     link: 'https://vimeo.com/185946610',
