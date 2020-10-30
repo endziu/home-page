@@ -1,9 +1,8 @@
 import Head from "next/head"
-
 import Header from "./Header"
 import Footer from "./Footer"
 
-export default ({ path, children, title = "endziu.xyz" }) => (
+const Layout =  ({ path, children, title = "endziu.xyz" }) => (
   <div className="sans-serif black-80 ph2 ph3-m ph4-l">
     <Head>
       <title>{title}</title>
@@ -23,3 +22,5 @@ export default ({ path, children, title = "endziu.xyz" }) => (
     `}</style>
   </div>
 )
+
+export default Layout
